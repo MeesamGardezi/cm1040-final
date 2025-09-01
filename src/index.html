@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pakistan's Internet Development Timeline (2006-2025) - From Internet Cafes to 5G">
+    <meta name="keywords" content="Pakistan internet history, digital transformation, PTCL, 3G 4G 5G, social media, fintech">
+    <meta name="author" content="CM1040 Web Development Coursework">
+    <title>Digital Pakistan Timeline: Internet Evolution 2006-2025</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Handlebars.js Library -->
+    <script src="lib/handlebars-v4.7.8.js"></script>
+</head>
+<body>
+    <!-- Fixed Header with Progress Indicator -->
+    <header class="fixed-header" id="mainHeader">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Digital Pakistan Timeline</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero" class="nav-link active" data-section="hero">Hero</a></li>
+                    <li><a href="#foundation" class="nav-link" data-section="foundation">Foundation (2006-14)</a></li>
+                    <li><a href="#mobile" class="nav-link" data-section="mobile">Mobile Revolution (2014-21)</a></li>
+                    <li><a href="#fintech" class="nav-link" data-section="fintech">Fintech Era (2021-25)</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-indicator" id="progressText">
+            📍 Currently viewing: Hero Section (0% through timeline)
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="section hero-section" id="hero" data-section="hero">
+            <div class="section-container">
+                <div class="hero-content">
+                    <div class="hero-header">
+                        <div class="section-number hero-icon">🏠</div>
+                        <h1 class="hero-title">19 Years of Digital Evolution</h1>
+                        <p class="hero-subtitle">Pakistan's Internet Journey: 2006-2025</p>
+                    </div>
+                    
+                    <div class="hero-video">
+                        <div class="video-placeholder">
+                            <div class="video-content">
+                                <h3>🎬 From Internet Cafes to 5G</h3>
+                                <p>Auto-playing timeline preview</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('foundation')">
+                            Start Journey ↓
+                        </button>
+                        <button class="btn btn-secondary" onclick="showAllStats()">
+                            View Statistics 📊
+                        </button>
+                    </div>
+                    
+                    <!-- Hero Statistics - JSON Driven -->
+                    <div class="hero-stats" id="heroStats">
+                        <!-- Will be populated by Handlebars template -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section Transition -->
+            <div class="section-transition">
+                <span>↓ Scroll to explore Foundation Era (2006-2014) ↓</span>
+            </div>
+        </section>
+
+        <!-- Foundation Era Section (2006-2014) -->
+        <section class="section foundation-section" id="foundation" data-section="foundation">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-number">1</div>
+                    <h2 class="section-title">Foundation Era</h2>
+                    <p class="section-subtitle">Building Digital Infrastructure (2006-2014)</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="main-content-area">
+                        <!-- PTCL Privatization Story -->
+                        <article class="content-block">
+                            <h3>🏢 PTCL Privatization Story <span class="json-badge">JSON</span></h3>
+                            <div class="content-placeholder">
+                                <p>Featured Image: Etisalat signing ceremony</p>
+                                <div id="ptclPrivatization">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Internet Cafe Culture -->
+                        <article class="content-block">
+                            <h3>☕ Internet Cafe Culture <span class="json-badge">JSON</span></h3>
+                            <div class="content-placeholder">
+                                <p>Image gallery: Pakistan's internet cafes</p>
+                                <div id="internetCafeCulture">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Infrastructure Milestones -->
+                        <article class="content-block">
+                            <h3>🌐 Infrastructure Milestones <span class="json-badge">JSON</span></h3>
+                            <div id="foundationMilestones">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <!-- Era Growth Statistics -->
+                        <div class="stats-card">
+                            <h4>📈 Era Growth <span class="json-badge">JSON</span></h4>
+                            <div id="foundationStats">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </div>
+                        
+                        <!-- Key Events Timeline -->
+                        <div class="timeline-mini">
+                            <h4>🎯 Key Events <span class="json-badge">JSON</span></h4>
+                            <div id="foundationTimeline">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </div>
+                        
+                        <!-- Next Section Preview -->
+                        <div class="next-section-preview">
+                            <div class="preview-content">
+                                <span class="preview-label">Next Section</span>
+                                <button class="btn btn-outline" onclick="scrollToSection('mobile')">
+                                    Mobile Revolution →
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            
+            <!-- Section Transition -->
+            <div class="section-transition">
+                <span>↓ Continue to Mobile Revolution (2014-2021) ↓</span>
+            </div>
+        </section>
+
+        <!-- Mobile Revolution Section (2014-2021) -->
+        <section class="section mobile-section" id="mobile" data-section="mobile">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-number">2</div>
+                    <h2 class="section-title">Mobile Revolution</h2>
+                    <p class="section-subtitle">Smartphones & Social Media Boom (2014-2021)</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="main-content-area">
+                        <!-- 3G/4G Explosion -->
+                        <article class="content-block">
+                            <h3>📱 3G/4G Explosion <span class="json-badge">JSON</span></h3>
+                            <div class="content-placeholder">
+                                <p>Network coverage maps</p>
+                                <div id="mobile3G4G">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Social Media Rise -->
+                        <article class="content-block">
+                            <h3>📺 Social Media Rise <span class="json-badge">JSON</span></h3>
+                            <div id="socialMediaGrowth">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </article>
+                        
+                        <!-- Digital Pakistan Policy -->
+                        <article class="content-block">
+                            <h3>🏛️ Digital Pakistan Policy (2018) <span class="json-badge">JSON</span></h3>
+                            <div id="digitalPakistanPolicy">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <!-- Policy Impact -->
+                        <div class="stats-card">
+                            <h4>🎛️ Policy Impact <span class="json-badge">JSON</span></h4>
+                            <div id="policyImpactStats">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </div>
+                        
+                        <!-- COVID-19 Acceleration -->
+                        <div class="timeline-mini">
+                            <h4>🦠 COVID-19 Acceleration</h4>
+                            <div id="covidImpact">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </div>
+                        
+                        <!-- Next Section Preview -->
+                        <div class="next-section-preview">
+                            <div class="preview-content">
+                                <span class="preview-label">Next Section</span>
+                                <button class="btn btn-outline" onclick="scrollToSection('fintech')">
+                                    Fintech Era →
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            
+            <!-- Section Transition -->
+            <div class="section-transition">
+                <span>↓ Explore Fintech Era (2021-2025) ↓</span>
+            </div>
+        </section>
+
+        <!-- Fintech Era Section (2021-2025) -->
+        <section class="section fintech-section" id="fintech" data-section="fintech">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-number">3</div>
+                    <h2 class="section-title">Fintech Era</h2>
+                    <p class="section-subtitle">Digital Payments & 5G Future (2021-2025)</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="main-content-area">
+                        <!-- RAAST Revolution -->
+                        <article class="content-block">
+                            <h3>💳 RAAST Revolution <span class="json-badge">JSON</span></h3>
+                            <div id="raastRevolution">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </article>
+                        
+                        <!-- Mobile Banking Dominance -->
+                        <article class="content-block">
+                            <h3>📱 Mobile Banking Dominance <span class="json-badge">JSON</span></h3>
+                            <div id="mobileBanking">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </article>
+                        
+                        <!-- Digital Divide Challenges -->
+                        <article class="content-block">
+                            <h3>⚖️ Digital Divide Challenges <span class="json-badge">JSON</span></h3>
+                            <div id="digitalDivide">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <!-- 5G Future -->
+                        <div class="stats-card">
+                            <h4>🚀 5G Future <span class="json-badge">JSON</span></h4>
+                            <div id="fiveGFuture">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </div>
+                        
+                        <!-- Investment Boom -->
+                        <div class="timeline-mini">
+                            <h4>💰 Investment Boom</h4>
+                            <div id="investmentBoom">
+                                <!-- Will be populated by Handlebars template -->
+                            </div>
+                        </div>
+                        
+                        <!-- Journey Complete -->
+                        <div class="journey-complete">
+                            <div class="complete-content">
+                                <h4>🎉 Journey Complete!</h4>
+                                <p>You've explored 19 years of Pakistan's digital transformation</p>
+                                <button class="btn btn-primary" onclick="showAllStats()">
+                                    View Full Statistics
+                                </button>
+                                <button class="btn btn-secondary" onclick="restartJourney()">
+                                    Restart Journey
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Pakistan's Digital Timeline...</p>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="error-modal" id="errorModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>⚠️ Data Loading Error</h3>
+                <button class="close-btn" onclick="closeErrorModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="errorMessage">Unable to load timeline data. Please check your internet connection and try again.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="retryDataLoad()">Try Again</button>
+                <button class="btn btn-secondary" onclick="closeErrorModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Handlebars Templates -->
+    
+    <!-- Hero Statistics Template -->
+    <script id="hero-stats-template" type="text/x-handlebars-template">
+        <div class="stats-grid">
+            {{#each heroStats}}
+            <div class="stat-card">
+                <div class="stat-icon">{{icon}}</div>
+                <div class="stat-content">
+                    <h3>{{title}}</h3>
+                    <div class="stat-value">{{value}}</div>
+                    <div class="stat-description">{{description}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- Historical Events Template -->
+    <script id="historical-events-template" type="text/x-handlebars-template">
+        <div class="timeline-events">
+            {{#each events}}
+            <div class="timeline-event">
+                <div class="event-date">{{date}}</div>
+                <div class="event-content">
+                    <h4>{{title}}</h4>
+                    <p>{{description}}</p>
+                    {{#if impact}}
+                    <div class="event-impact">
+                        <strong>Impact:</strong> {{impact}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- Statistics Template -->
+    <script id="statistics-template" type="text/x-handlebars-template">
+        <div class="stats-chart">
+            <div class="chart-placeholder">Interactive Growth Chart</div>
+            <div class="stats-data">
+                {{#each yearlyStats}}
+                <div class="year-stat">
+                    <span class="year">{{year}}:</span>
+                    <span class="users">{{users}}</span>
+                    <span class="penetration">({{penetration}})</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+
+    <!-- Company Profile Template -->
+    <script id="company-template" type="text/x-handlebars-template">
+        <div class="companies-grid">
+            {{#each companies}}
+            <div class="company-card">
+                <div class="company-header">
+                    <h4>{{name}}</h4>
+                    <span class="market-share">{{marketShare}}% market share</span>
+                </div>
+                <div class="company-details">
+                    <p><strong>Subscribers:</strong> {{subscribers}}</p>
+                    <p><strong>Founded:</strong> {{founded}}</p>
+                    {{#if keyMilestone}}
+                    <div class="company-milestone">
+                        <strong>Key Milestone:</strong> {{keyMilestone}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- Social Media Template -->
+    <script id="social-media-template" type="text/x-handlebars-template">
+        <div class="social-media-grid">
+            {{#each platforms}}
+            <div class="platform-card">
+                <div class="platform-icon">{{icon}}</div>
+                <div class="platform-info">
+                    <h4>{{name}}</h4>
+                    <div class="platform-users">{{users}}</div>
+                    <div class="platform-penetration">{{penetration}} of population</div>
+                    {{#if note}}
+                    <div class="platform-note">{{note}}</div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- Policy Results Template -->
+    <script id="policy-template" type="text/x-handlebars-template">
+        <div class="policy-results">
+            {{#each policies}}
+            <div class="policy-item">
+                <h4>{{title}} ({{year}})</h4>
+                <div class="policy-targets">
+                    <div class="target">
+                        <span class="label">Target:</span>
+                        <span class="value">{{target}}</span>
+                    </div>
+                    <div class="achievement">
+                        <span class="label">Achievement:</span>
+                        <span class="value {{achievementStatus}}">{{achievement}}</span>
+                    </div>
+                </div>
+                {{#if description}}
+                <p class="policy-description">{{description}}</p>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- Infrastructure Template -->
+    <script id="infrastructure-template" type="text/x-handlebars-template">
+        <div class="infrastructure-grid">
+            {{#each infrastructure}}
+            <div class="infrastructure-item">
+                <div class="infra-icon">{{icon}}</div>
+                <div class="infra-content">
+                    <h4>{{name}}</h4>
+                    <div class="infra-specs">
+                        {{#each specifications}}
+                        <div class="spec">
+                            <span class="spec-label">{{label}}:</span>
+                            <span class="spec-value">{{value}}</span>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- JavaScript Files -->
+    <script src="js/json-validator.js"></script>
+    <script src="js/template-renderer.js"></script>
+    <script src="js/scroll-controller.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

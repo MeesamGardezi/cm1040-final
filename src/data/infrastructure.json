@@ -1,0 +1,404 @@
+{
+  "infrastructure": [
+    {
+      "name": "IMEWE Submarine Cable",
+      "icon": "🌊",
+      "type": "International Submarine Cable",
+      "specifications": [
+        {"label": "Capacity", "value": "3.84 Tbps"},
+        {"label": "Operational Since", "value": "2010"},
+        {"label": "Length", "value": "13,000 km"},
+        {"label": "Landing Points", "value": "Karachi"}
+      ],
+      "description": "India-Middle East-Western Europe cable system connecting Pakistan to global internet infrastructure",
+      "significance": "First major capacity boost for Pakistan's international connectivity",
+      "operators": ["PTCL", "Transworld Associates"]
+    },
+    {
+      "name": "PEACE Submarine Cable", 
+      "icon": "🌊",
+      "type": "International Submarine Cable",
+      "specifications": [
+        {"label": "Capacity", "value": "144 Tbps"},
+        {"label": "Operational Since", "value": "2022"},
+        {"label": "Length", "value": "15,000 km"},
+        {"label": "Landing Points", "value": "Karachi, Gwadar"}
+      ],
+      "description": "Pakistan-East Africa-Europe cable system enhancing CPEC digital connectivity",
+      "significance": "Part of China's Digital Silk Road initiative, massive capacity increase",
+      "operators": ["China Mobile", "PTCL", "Cybernet"]
+    },
+    {
+      "name": "SEA-ME-WE 6",
+      "icon": "🌊", 
+      "type": "International Submarine Cable",
+      "specifications": [
+        {"label": "Capacity", "value": "126+ Tbps"},
+        {"label": "Operational Since", "value": "2022"}, 
+        {"label": "Length", "value": "19,200 km"},
+        {"label": "Landing Points", "value": "Karachi"}
+      ],
+      "description": "Southeast Asia-Middle East-Western Europe cable system, latest generation",
+      "significance": "Ultra-high capacity cable serving Asia-Europe traffic",
+      "operators": ["PTCL", "Multiple International Carriers"]
+    },
+    {
+      "name": "AAE-1 Submarine Cable",
+      "icon": "🌊",
+      "type": "International Submarine Cable", 
+      "specifications": [
+        {"label": "Capacity", "value": "40 Tbps"},
+        {"label": "Operational Since", "value": "2017"},
+        {"label": "Length", "value": "25,000 km"},
+        {"label": "Landing Points", "value": "Karachi"}
+      ],
+      "description": "Asia-Africa-Europe-1 cable connecting 19 countries across three continents",
+      "significance": "Diversified Pakistan's international connectivity routes",
+      "operators": ["PTCL", "Multiple Regional Carriers"]
+    },
+    {
+      "name": "PTCL Fiber Optic Network",
+      "icon": "🔗",
+      "type": "National Fiber Infrastructure",
+      "specifications": [
+        {"label": "Total Length", "value": "70,000+ km"},
+        {"label": "Coverage", "value": "All major cities and towns"},
+        {"label": "Technology", "value": "Single-mode fiber"},
+        {"label": "Backbone Capacity", "value": "Multiple 10 Gbps links"}
+      ],
+      "description": "Pakistan's largest terrestrial fiber optic network serving as national backbone",
+      "significance": "Foundation for all broadband and cellular backhaul in Pakistan",
+      "services": ["Internet backbone", "Cellular backhaul", "Enterprise connectivity", "Government networks"]
+    },
+    {
+      "name": "Jazz 4G/5G Network",
+      "icon": "📡",
+      "type": "Mobile Network Infrastructure",
+      "specifications": [
+        {"label": "Cell Sites", "value": "18,000+"},
+        {"label": "4G Coverage", "value": "95% population"},
+        {"label": "5G Testing", "value": "Multiple cities"},
+        {"label": "Spectrum", "value": "850/900/1800/2100/2600 MHz"}
+      ],
+      "description": "Pakistan's largest mobile network with extensive 4G coverage and 5G testing",
+      "significance": "Market leader serving 75 million subscribers",
+      "technologies": ["2G GSM", "3G UMTS", "4G LTE-A", "5G NR Testing"]
+    },
+    {
+      "name": "Telenor 4G Network",
+      "icon": "📡", 
+      "type": "Mobile Network Infrastructure",
+      "specifications": [
+        {"label": "Cell Sites", "value": "15,000+"},
+        {"label": "4G Coverage", "value": "90% population"},
+        {"label": "Rural Coverage", "value": "85% rural population"},
+        {"label": "Spectrum", "value": "900/1800/2100/2600 MHz"}
+      ],
+      "description": "Extensive mobile network with strong rural coverage and focus on financial inclusion",
+      "significance": "Strong rural penetration supporting digital financial inclusion",
+      "specialization": "Rural connectivity and mobile financial services"
+    },
+    {
+      "name": "Zong 4G/5G Network", 
+      "icon": "📡",
+      "type": "Mobile Network Infrastructure",
+      "specifications": [
+        {"label": "Cell Sites", "value": "13,000+"},
+        {"label": "4G Coverage", "value": "88% population"}, 
+        {"label": "5G Test Speed", "value": "1.5 Gbps achieved"},
+        {"label": "Spectrum", "value": "900/1800/2100/2600 MHz"}
+      ],
+      "description": "Advanced mobile network with fastest 4G speeds and 5G leadership",
+      "significance": "First to achieve 1.5 Gbps 5G speeds in Pakistan",
+      "achievements": ["Fastest 4G network", "5G speed records", "China Mobile technology"]
+    },
+    {
+      "name": "National Data Centers",
+      "icon": "🏢",
+      "type": "Data Center Infrastructure", 
+      "specifications": [
+        {"label": "Major Facilities", "value": "25+ enterprise-grade"},
+        {"label": "Total Capacity", "value": "50+ MW"},
+        {"label": "Locations", "value": "Karachi, Lahore, Islamabad"},
+        {"label": "Tier Standards", "value": "Tier II and III facilities"}
+      ],
+      "description": "Growing data center infrastructure supporting cloud services and digital transformation",
+      "significance": "Foundation for local cloud services and reduced latency",
+      "operators": ["PTCL", "Nayatel", "Systems Limited", "Private operators"]
+    },
+    {
+      "name": "Internet Exchange Points",
+      "icon": "🔄",
+      "type": "Network Infrastructure",
+      "specifications": [
+        {"label": "PKIX Locations", "value": "Karachi, Lahore, Islamabad"},
+        {"label": "Connected ISPs", "value": "50+ operators"},
+        {"label": "Peak Traffic", "value": "200+ Gbps"},
+        {"label": "Redundancy", "value": "Multiple sites per city"}
+      ],
+      "description": "Pakistan Internet Exchange (PKIX) points enabling efficient local traffic exchange",
+      "significance": "Reduces international transit costs and improves local content delivery",
+      "benefits": ["Reduced latency", "Cost savings", "Better local content performance"]
+    },
+    {
+      "name": "5G Infrastructure Readiness",
+      "icon": "🚀", 
+      "type": "Next Generation Mobile",
+      "specifications": [
+        {"label": "Spectrum Identified", "value": "3500/2600/2300/700 MHz"},
+        {"label": "Test Sites", "value": "10+ locations"},
+        {"label": "Max Speed Achieved", "value": "1.5 Gbps"},
+        {"label": "Commercial Launch", "value": "June-July 2025"}
+      ],
+      "description": "5G infrastructure preparation with spectrum allocation and network testing",
+      "significance": "Pakistan positioned as regional 5G leader",
+      "applications": ["Enhanced mobile broadband", "IoT connectivity", "Industrial automation", "Smart cities"]
+    },
+    {
+      "name": "Government Network Infrastructure", 
+      "icon": "🏛️",
+      "type": "Government Networks",
+      "specifications": [
+        {"label": "Connected Offices", "value": "5,000+ government offices"},
+        {"label": "Backbone", "value": "Dedicated fiber network"},
+        {"label": "Services", "value": "Internet, VPN, video conferencing"},
+        {"label": "Security", "value": "Encrypted government-only network"}
+      ],
+      "description": "Dedicated network infrastructure serving government offices and e-government services",
+      "significance": "Enables secure government communications and e-government initiatives",
+      "services": ["E-government portals", "Inter-ministry communications", "Citizen services", "Digital records"]
+    }
+  ],
+  "networkStatistics": {
+    "totalCellSites": {
+      "count": 55777,
+      "breakdown": {
+        "4gEnabled": 95.5,
+        "3gEnabled": 98.2,
+        "ruralCoverage": 78.5,
+        "urbanCoverage": 99.8
+      }
+    },
+    "internetBandwidth": {
+      "international": {
+        "totalCapacity": "200+ Tbps",
+        "utilization": "15-20%",
+        "majorRoutes": ["Europe", "Asia", "Middle East"],
+        "redundancy": "Multiple cable systems"
+      },
+      "national": {
+        "backboneCapacity": "Multiple 10 Gbps links",
+        "distribution": "Fiber + microwave",
+        "coverage": "All major population centers"
+      }
+    },
+    "mobileBroadband": {
+      "subscribers": 146000000,
+      "penetration": "74% of mobile connections", 
+      "averageSpeed": {
+        "4g": "15-25 Mbps",
+        "3g": "2-5 Mbps"
+      },
+      "dataUsage": "6.2 GB per user per month"
+    },
+    "fixedBroadband": {
+      "subscribers": 2100000,
+      "growth": "3000% from 2018",
+      "averageSpeed": "20-50 Mbps",
+      "fiberPenetration": "60% of fixed broadband"
+    }
+  },
+  "technicalChallenges": [
+    {
+      "challenge": "Power Infrastructure",
+      "description": "Unreliable electricity supply affecting network operations",
+      "impact": [
+        "12-16 hours daily outages in some areas",
+        "High operational costs due to diesel generators", 
+        "Network availability issues during extended outages",
+        "Increased maintenance requirements"
+      ],
+      "solutions": [
+        "Solar power deployments at cell sites",
+        "Improved battery backup systems",
+        "Grid stability improvements",
+        "Energy-efficient equipment"
+      ]
+    },
+    {
+      "challenge": "Right of Way Issues",
+      "description": "Difficulties in obtaining permits for infrastructure deployment",
+      "impact": [
+        "Delayed fiber rollouts",
+        "Increased deployment costs",
+        "Inconsistent coverage in some areas",
+        "Complex regulatory approvals"
+      ],
+      "solutions": [
+        "Infrastructure sharing agreements",
+        "Streamlined approval processes",
+        "Government policy support", 
+        "Public-private partnerships"
+      ]
+    },
+    {
+      "challenge": "Skilled Workforce Shortage",
+      "description": "Limited availability of specialized technical personnel",
+      "impact": [
+        "Slower network deployments",
+        "Higher operational costs",
+        "Dependence on foreign expertise",
+        "Innovation limitations"
+      ],
+      "solutions": [
+        "Technical education programs",
+        "Industry-academia partnerships",
+        "Certification programs",
+        "Knowledge transfer initiatives"
+      ]
+    }
+  ],
+  "investments": {
+    "privateSector": [
+      {
+        "operator": "Jazz (VEON)",
+        "investment2024": "$200 million",
+        "focus": ["4G expansion", "5G preparation", "Fiber backhaul"]
+      },
+      {
+        "operator": "Telenor Pakistan", 
+        "investment2024": "$150 million",
+        "focus": ["Rural coverage", "Network modernization", "Digital services"]
+      },
+      {
+        "operator": "Zong (China Mobile)",
+        "investment2024": "$180 million", 
+        "focus": ["5G deployment", "Network capacity", "Data centers"]
+      },
+      {
+        "operator": "PTCL",
+        "investment2024": "$120 million",
+        "focus": ["Fiber expansion", "Data centers", "Enterprise services"]
+      }
+    ],
+    "government": [
+      {
+        "program": "Universal Service Fund",
+        "budget2024": "$100 million",
+        "focus": ["Rural connectivity", "Broadband access", "Digital divide reduction"]
+      },
+      {
+        "program": "Digital Infrastructure Development",
+        "budget2024": "$200 million", 
+        "focus": ["Fiber networks", "Data centers", "Government connectivity"]
+      }
+    ],
+    "international": [
+      {
+        "source": "World Bank",
+        "commitment": "$200 million",
+        "program": "Digital transformation projects"
+      },
+      {
+        "source": "Asian Development Bank",
+        "commitment": "$300 million",
+        "program": "Broadband infrastructure development"
+      },
+      {
+        "source": "China (BRI/CPEC)",
+        "commitment": "$1.5 billion",
+        "program": "Digital Silk Road infrastructure"
+      }
+    ]
+  },
+  "futureInfrastructure": {
+    "5gDeployment": {
+      "phase1": {
+        "timeline": "2025-2026",
+        "coverage": "Major cities (Karachi, Lahore, Islamabad, Rawalpindi)",
+        "investment": "$500 million estimated",
+        "expectedUsers": "10 million by end 2026"
+      },
+      "phase2": {
+        "timeline": "2026-2028", 
+        "coverage": "Secondary cities and industrial areas",
+        "investment": "$800 million estimated",
+        "expectedUsers": "25 million by end 2028"
+      },
+      "phase3": {
+        "timeline": "2028-2030",
+        "coverage": "Rural and remote areas",
+        "investment": "$700 million estimated",
+        "expectedUsers": "40+ million by end 2030"
+      }
+    },
+    "fiberExpansion": {
+      "targets": {
+        "2025": "50% of population with fiber access",
+        "2027": "70% of population with fiber access", 
+        "2030": "90% of population with fiber access"
+      },
+      "investment": "$2 billion over 5 years",
+      "focus": ["FTTH deployments", "Rural fiber", "Business districts", "Industrial zones"]
+    },
+    "dataCenter": {
+      "capacity": "Triple current capacity by 2028",
+      "locations": "New facilities in Gwadar, Peshawar, Quetta",
+      "investment": "$400 million planned",
+      "services": ["Cloud hosting", "Content delivery", "Disaster recovery", "AI/ML processing"]
+    },
+    "satelliteInternet": {
+      "timeline": "2025-2026 for remote areas",
+      "technology": "Low Earth Orbit (LEO) satellites",
+      "coverage": "Rural and mountainous regions",
+      "providers": "International partnerships under consideration"
+    }
+  },
+  "internationalConnectivity": {
+    "currentStatus": {
+      "totalBandwidth": "200+ Tbps capacity",
+      "activeConnections": "4 major submarine cables", 
+      "utilizationRate": "15-20%",
+      "redundancy": "Multiple paths to Europe, Asia, Middle East"
+    },
+    "plannedUpgrades": [
+      {
+        "project": "Trans-Eurasian Information Super Highway (TASIM)",
+        "timeline": "2025-2027",
+        "capacity": "Additional terrestrial connectivity to Central Asia and Europe",
+        "investment": "$300 million"
+      },
+      {
+        "project": "New submarine cable systems",
+        "timeline": "2026-2028", 
+        "focus": "Direct connections to Africa and Americas",
+        "capacity": "100+ Tbps additional"
+      }
+    ]
+  },
+  "qualityMetrics": {
+    "networkPerformance": {
+      "averageLatency": {
+        "domestic": "25-40 ms",
+        "international": "120-180 ms to Europe",
+        "regional": "60-100 ms to Middle East/Asia"
+      },
+      "availability": {
+        "mobile": "99.2% network availability",
+        "fixed": "99.5% network availability",
+        "enterprise": "99.9% SLA targets"
+      },
+      "speeds": {
+        "mobileAverage": "18.5 Mbps download",
+        "fixedAverage": "35.2 Mbps download",
+        "fiberAverage": "78.5 Mbps download"
+      }
+    },
+    "coverage": {
+      "geographic": "99.8% of populated areas",
+      "population": "98.5% of total population",
+      "rural": "85.2% of rural population", 
+      "urban": "99.9% of urban population"
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "heroStats": [
+    {
+      "icon": "📊",
+      "title": "Current Users",
+      "value": "135.5M",
+      "description": "53.57% penetration rate"
+    },
+    {
+      "icon": "🚀", 
+      "title": "Growth Journey",
+      "value": "1,331%",
+      "description": "From 10.17M in 2006"
+    },
+    {
+      "icon": "📱",
+      "title": "5G Launch", 
+      "value": "2025",
+      "description": "1.5 Gbps speeds tested"
+    }
+  ],
+  "foundationEra": {
+    "events": [
+      {
+        "date": "2006",
+        "title": "PTCL Privatization",
+        "description": "Etisalat acquires 26% stake for $2.6 billion, marking the beginning of market liberalization",
+        "impact": "Opened Pakistan's telecom market to international investment and competition"
+      },
+      {
+        "date": "2008", 
+        "title": "PTCL EVO Network Launch",
+        "description": "Pakistan's first major 3G deployment providing wireless broadband access",
+        "impact": "Introduced concept of mobile internet to Pakistani consumers"
+      },
+      {
+        "date": "2010",
+        "title": "IMEWE Submarine Cable",
+        "description": "International cable system enters service with 3.84 Tbps capacity",
+        "impact": "Dramatically improved Pakistan's international internet connectivity"
+      },
+      {
+        "date": "April 23, 2014",
+        "title": "Historic 3G/4G Launch", 
+        "description": "Simultaneous launch by all major operators after spectrum auction",
+        "impact": "Revolutionary moment that enabled smartphone adoption and mobile internet boom"
+      }
+    ],
+    "yearlyStats": [
+      {
+        "year": "2006",
+        "users": "10.17 million",
+        "penetration": "6.5%"
+      },
+      {
+        "year": "2008", 
+        "users": "12.4 million",
+        "penetration": "7.2%"
+      },
+      {
+        "year": "2010",
+        "users": "15.9 million", 
+        "penetration": "8.9%"
+      },
+      {
+        "year": "2012",
+        "users": "17.67 million",
+        "penetration": "10.0%"
+      },
+      {
+        "year": "2014",
+        "users": "30+ million",
+        "penetration": "15.5%"
+      }
+    ]
+  },
+  "mobileEra": {
+    "events": [
+      {
+        "date": "April 23, 2014",
+        "title": "3G/4G Spectrum Auction",
+        "description": "Historic simultaneous launch by Jazz, Telenor, Zong, and Ufone",
+        "impact": "Enabled smartphone revolution and mobile internet adoption"
+      },
+      {
+        "date": "May 22, 2018",
+        "title": "Digital Pakistan Policy Launch",
+        "description": "$20 billion ICT sector target by 2025 with comprehensive digitization strategy",
+        "impact": "Structured approach to digital transformation with measurable goals"
+      },
+      {
+        "date": "2020-2021",
+        "title": "COVID-19 Digital Acceleration", 
+        "description": "Pandemic accelerated digital adoption with TeleSchool reaching 6 million children weekly",
+        "impact": "19% increase in internet users, permanent shift to digital services"
+      }
+    ],
+    "socialMediaGrowth": [
+      {
+        "platform": "Facebook",
+        "peakUsers": "57.6 million",
+        "year": "2024", 
+        "currentUsers": "49.4 million",
+        "note": "Slight decline in 2025"
+      },
+      {
+        "platform": "YouTube",
+        "users": "71.7 million",
+        "penetration": "29.5% of population",
+        "note": "Highest growth platform"
+      },
+      {
+        "platform": "WhatsApp",
+        "users": "52 million", 
+        "ranking": "Pakistan ranked 3rd globally for downloads",
+        "note": "Primary messaging platform"
+      },
+      {
+        "platform": "TikTok",
+        "peakUsers": "20 million",
+        "status": "Multiple government bans (2020-2021)",
+        "note": "Controversial but popular short-form video platform"
+      }
+    ]
+  },
+  "fintechEra": {
+    "events": [
+      {
+        "date": "January 2021",
+        "title": "RAAST Launch",
+        "description": "Pakistan's instant payment system launches with real-time transaction processing",
+        "impact": "1.5 billion transactions, Rs34+ trillion value processed since launch"
+      },
+      {
+        "date": "2022", 
+        "title": "PEACE and SEA-ME-WE 6 Cables",
+        "description": "New submarine cables operational providing 200+ Tbps international capacity",
+        "impact": "Enhanced Pakistan's connectivity infrastructure for 5G era"
+      },
+      {
+        "date": "2025",
+        "title": "Year of 5G Declaration", 
+        "description": "Commercial 5G launch planned for June-July with 1.5 Gbps speeds achieved in testing",
+        "impact": "Positions Pakistan as regional 5G leader"
+      }
+    ],
+    "mobileBanking": [
+      {
+        "service": "EasyPaisa",
+        "users": "50 million",
+        "description": "1 in 4 adult Pakistanis, handles 9% of GDP",
+        "parent": "Telenor Pakistan"
+      },
+      {
+        "service": "JazzCash", 
+        "description": "Market leader with 80,000+ agent network",
+        "parent": "Jazz (VEON)"
+      }
+    ],
+    "investmentBoom": [
+      {
+        "company": "SadaPay",
+        "funding": "$20+ million total funding",
+        "type": "Digital payments"
+      },
+      {
+        "company": "NayaPay",
+        "funding": "$13 million seed funding", 
+        "type": "Digital banking"
+      },
+      {
+        "company": "Oraan",
+        "funding": "$3 million Series A",
+        "note": "Largest women-led Pakistani startup funding"
+      }
+    ]
+  },
+  "digitalDivides": {
+    "genderGap": {
+      "percentage": "39.4%",
+      "ranking": "World's highest",
+      "menAccess": "43%",
+      "womenAccess": "23%"
+    },
+    "geographicGap": {
+      "urbanAccess": "60-70%",
+      "ruralAccess": "20-30%",
+      "urbanHouseholds": "48%",
+      "ruralHouseholds": "23%"
+    },
+    "economicBarriers": {
+      "fixedBroadbandCost": "12.7% of GNI per capita",
+      "mobileDataCost": "1.5% of GNI per capita",
+      "mobileTaxBurden": "31% vs 19% global average"
+    }
+  },
+  "fiveGFuture": {
+    "launchTimeline": "June-July 2025",
+    "testSpeeds": "1.5 Gbps achieved by Zong (2020)",
+    "spectrumBands": ["3500MHz", "2600MHz", "2300MHz", "700MHz"],
+    "regionalFirst": "Pakistan became first South Asian country to test 5G (August 2019)"
+  }
+}

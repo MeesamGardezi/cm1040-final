@@ -8,7 +8,6 @@ I discussed the design with my parents, and took help from AI to improve this. T
 **Made it interactive:**
 - Added proper buttons that look clickable
 - Timeline now has actual visual elements instead of just text
-- Mobile has hamburger menu and bottom navigation like real apps
 
 **Better organization:**
 - Used CSS Grid instead of basic flexbox

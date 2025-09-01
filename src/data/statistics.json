@@ -1,0 +1,307 @@
+{
+  "overview": {
+    "totalYears": 19,
+    "startYear": 2006,
+    "endYear": 2025,
+    "totalGrowthPercentage": 1331,
+    "currentUsers": "135.5 million",
+    "currentPenetration": "53.57%"
+  },
+  "yearlyGrowth": [
+    {
+      "year": 2006,
+      "users": 10.17,
+      "usersFormatted": "10.17 million",
+      "penetrationRate": 6.5,
+      "population": 156.5,
+      "majorEvent": "PTCL Privatization - Etisalat $2.6B investment"
+    },
+    {
+      "year": 2007,
+      "users": 11.5,
+      "usersFormatted": "11.5 million",
+      "penetrationRate": 7.1,
+      "population": 160.9,
+      "majorEvent": "Market liberalization begins"
+    },
+    {
+      "year": 2008,
+      "users": 12.4,
+      "usersFormatted": "12.4 million", 
+      "penetrationRate": 7.2,
+      "population": 164.7,
+      "majorEvent": "PTCL EVO network launches - Pakistan's first major 3G"
+    },
+    {
+      "year": 2009,
+      "users": 13.8,
+      "usersFormatted": "13.8 million",
+      "penetrationRate": 8.1,
+      "population": 168.6,
+      "majorEvent": "Internet cafe culture peaks"
+    },
+    {
+      "year": 2010,
+      "users": 15.9,
+      "usersFormatted": "15.9 million",
+      "penetrationRate": 8.9,
+      "population": 172.4,
+      "majorEvent": "IMEWE submarine cable operational (3.84 Tbps)"
+    },
+    {
+      "year": 2011,
+      "users": 16.8,
+      "usersFormatted": "16.8 million",
+      "penetrationRate": 9.4,
+      "population": 176.4,
+      "majorEvent": "Broadband infrastructure expansion"
+    },
+    {
+      "year": 2012,
+      "users": 17.67,
+      "usersFormatted": "17.67 million",
+      "penetrationRate": 10.0,
+      "population": 177.4,
+      "majorEvent": "Internet cafe usage: 79.3% of all users"
+    },
+    {
+      "year": 2013,
+      "users": 22.4,
+      "usersFormatted": "22.4 million",
+      "penetrationRate": 12.4,
+      "population": 180.7,
+      "majorEvent": "Pre-3G/4G growth acceleration"
+    },
+    {
+      "year": 2014,
+      "users": 35.0,
+      "usersFormatted": "35 million",
+      "penetrationRate": 18.3,
+      "population": 185.0,
+      "majorEvent": "Historic 3G/4G simultaneous launch - April 23"
+    },
+    {
+      "year": 2015,
+      "users": 45.0,
+      "usersFormatted": "45 million",
+      "penetrationRate": 23.2,
+      "population": 189.4,
+      "majorEvent": "Smartphone adoption acceleration"
+    },
+    {
+      "year": 2016,
+      "users": 50.4,
+      "usersFormatted": "50.4 million",
+      "penetrationRate": 25.7,
+      "population": 193.9,
+      "majorEvent": "Social media platforms gain traction"
+    },
+    {
+      "year": 2017,
+      "users": 44.6,
+      "usersFormatted": "44.6 million",
+      "penetrationRate": 22.2,
+      "population": 198.4,
+      "majorEvent": "Market correction and infrastructure upgrades"
+    },
+    {
+      "year": 2018,
+      "users": 50.38,
+      "usersFormatted": "50.38 million",
+      "penetrationRate": 24.8,
+      "population": 202.9,
+      "majorEvent": "Digital Pakistan Policy launched - $20B ICT target by 2025"
+    },
+    {
+      "year": 2019,
+      "users": 76.38,
+      "usersFormatted": "76.38 million",
+      "penetrationRate": 36.2,
+      "population": 207.8,
+      "majorEvent": "Pakistan becomes first South Asian country to test 5G"
+    },
+    {
+      "year": 2020,
+      "users": 54.7,
+      "usersFormatted": "54.7 million",
+      "penetrationRate": 25.5,
+      "population": 212.2,
+      "majorEvent": "COVID-19 pandemic begins - digital transformation accelerates"
+    },
+    {
+      "year": 2021,
+      "users": 118.0,
+      "usersFormatted": "118 million",
+      "penetrationRate": 54.0,
+      "population": 216.6,
+      "majorEvent": "RAAST instant payment system launches - January"
+    },
+    {
+      "year": 2022,
+      "users": 127.1,
+      "usersFormatted": "127.1 million",
+      "penetrationRate": 57.18,
+      "population": 231.4,
+      "majorEvent": "PEACE and SEA-ME-WE 6 submarine cables operational"
+    },
+    {
+      "year": 2023,
+      "users": 133.4,
+      "usersFormatted": "133.4 million",
+      "penetrationRate": 56.73,
+      "population": 235.2,
+      "majorEvent": "Fintech investment boom - $300M+ sector funding"
+    },
+    {
+      "year": 2024,
+      "users": 134.9,
+      "usersFormatted": "134.9 million",
+      "penetrationRate": 54.48,
+      "population": 247.6,
+      "majorEvent": "Facebook reaches peak 57.6M users, then declines"
+    },
+    {
+      "year": 2025,
+      "users": 135.5,
+      "usersFormatted": "135.5 million",
+      "penetrationRate": 53.57,
+      "population": 253.0,
+      "majorEvent": "Year of 5G - Commercial launch planned June-July"
+    }
+  ],
+  "eraBreakdowns": {
+    "foundationEra": {
+      "years": "2006-2014",
+      "startUsers": 10.17,
+      "endUsers": 35.0,
+      "growthRate": 244.05,
+      "keyMetrics": {
+        "avgAnnualGrowth": 15.4,
+        "internetCafeUsage": 79.3,
+        "majorInvestment": "$2.6 billion PTCL privatization"
+      }
+    },
+    "mobileEra": {
+      "years": "2014-2021", 
+      "startUsers": 35.0,
+      "endUsers": 118.0,
+      "growthRate": 237.14,
+      "keyMetrics": {
+        "avgAnnualGrowth": 19.1,
+        "smartphoneAdoption": "85% by 2021",
+        "socialMediaPeak": "Facebook 57.6M users"
+      }
+    },
+    "fintechEra": {
+      "years": "2021-2025",
+      "startUsers": 118.0,
+      "endUsers": 135.5,
+      "growthRate": 14.83,
+      "keyMetrics": {
+        "avgAnnualGrowth": 3.5,
+        "maturingMarket": true,
+        "digitalPayments": "89% of retail transactions"
+      }
+    }
+  },
+  "internationalComparisons": {
+    "southAsia": {
+      "pakistanRank": 2,
+      "penetrationVsIndia": "53.57% vs 48%",
+      "penetrationVsBangladesh": "53.57% vs 26.8%",
+      "notes": "Pakistan ahead in penetration rate despite smaller economy"
+    },
+    "global": {
+      "worldAverage": 64.4,
+      "pakistanPosition": "Below world average by 10.83 percentage points",
+      "developingCountriesAvg": 57.2,
+      "positionInDeveloping": "Slightly below developing countries average"
+    }
+  },
+  "economicImpact": {
+    "gdpContribution": {
+      "2018": "3.7%",
+      "2021": "4.8%", 
+      "2025": "5.4%",
+      "targetBy2030": "8-10%"
+    },
+    "employment": {
+      "directJobs": 500000,
+      "indirectJobs": 1500000,
+      "totalImpact": "2 million jobs created"
+    },
+    "exports": {
+      "2018": "$1.067 billion",
+      "2024": "$1.86 billion",
+      "growthRate": "74.3% over 6 years"
+    },
+    "digitalPayments": {
+      "raastTransactions": "1.5 billion since 2021",
+      "raastValue": "Rs34+ trillion processed",
+      "mobileWalletUsers": "52 million combined (EasyPaisa + JazzCash)"
+    }
+  },
+  "technologyAdoption": {
+    "mobileTechnology": {
+      "2gUsers": 12.5,
+      "3gUsers": 68.2,
+      "4gUsers": 146.0,
+      "5gUsers": 0.1,
+      "totalMobileConnections": 193.0
+    },
+    "fixedBroadband": {
+      "2018": 70000,
+      "2025": 2100000,
+      "growthRate": "3000% increase"
+    },
+    "fiberConnections": {
+      "coverage": "Major cities covered",
+      "speeds": "Up to 100 Mbps residential",
+      "businessSpeeds": "Up to 10 Gbps"
+    }
+  },
+  "challenges": {
+    "digitalDivide": {
+      "genderGap": {
+        "percentage": 39.4,
+        "menAccess": 43,
+        "womenAccess": 23,
+        "globalRanking": "Worst globally"
+      },
+      "ruralUrban": {
+        "urbanAccess": "60-70%",
+        "ruralAccess": "20-30%",
+        "householdUrban": 48,
+        "householdRural": 23
+      },
+      "affordability": {
+        "fixedBroadbandCost": "12.7% of GNI per capita",
+        "mobileCost": "1.5% of GNI per capita", 
+        "taxBurden": "31% vs 19% global average"
+      }
+    },
+    "infrastructure": {
+      "powerOutages": "12-16 hours daily in some areas",
+      "lastMileConnectivity": "Rural fiber penetration <5%",
+      "cybersecurity": "Growing threats to digital infrastructure"
+    }
+  },
+  "future2025": {
+    "5gLaunch": {
+      "timeline": "June-July 2025",
+      "expectedUsers": "5-10 million by end of 2025",
+      "testSpeeds": "1.5 Gbps achieved",
+      "applications": "IoT, autonomous vehicles, smart cities"
+    },
+    "targets": {
+      "internetPenetration": "60% by 2027",
+      "digitalLiteracy": "70% by 2030",
+      "fiberCoverage": "50% of population by 2027"
+    },
+    "investments": {
+      "privateInvestment": "$2 billion planned 2025-2027",
+      "governmentSpending": "$500 million digital infrastructure",
+      "internationalFunding": "$1.5 billion World Bank and ADB commitments"
+    }
+  }
+}

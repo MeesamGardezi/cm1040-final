@@ -1,0 +1,367 @@
+{
+  "overview": {
+    "totalSocialMediaUsers": "87.6 million",
+    "penetrationRate": "34.6%",
+    "yearOverYearGrowth": "2.1%",
+    "averageTimeDaily": "2 hours 24 minutes",
+    "mostActiveAge": "18-34 years (65% of users)",
+    "mobileUsage": "99.1% access via mobile"
+  },
+  "platforms": [
+    {
+      "icon": "📹",
+      "name": "YouTube",
+      "users": "71.7 million",
+      "penetration": "29.5% of population",
+      "ranking": 1,
+      "yearOverYearGrowth": "+8.2%",
+      "demographics": {
+        "male": 65,
+        "female": 35,
+        "primaryAge": "18-34 (58%)"
+      },
+      "contentPreferences": [
+        "Music and Entertainment (35%)",
+        "Educational Content (28%)",
+        "Comedy and Vlogs (22%)",
+        "News and Politics (15%)"
+      ],
+      "localCreators": "500,000+ Pakistani channels",
+      "watchTimeDaily": "45 minutes average",
+      "note": "Most popular platform - highest engagement rates"
+    },
+    {
+      "icon": "💬",
+      "name": "WhatsApp",
+      "users": "52 million", 
+      "penetration": "21.4% of population",
+      "ranking": 2,
+      "yearOverYearGrowth": "+5.1%",
+      "demographics": {
+        "male": 52,
+        "female": 48,
+        "primaryAge": "25-44 (51%)"
+      },
+      "usagePrimary": "Messaging and Communication",
+      "businessAccounts": "2.5 million Pakistani businesses",
+      "averageMessages": "67 messages sent daily",
+      "globalRanking": "3rd globally for WhatsApp downloads",
+      "note": "Primary messaging platform - essential for communication"
+    },
+    {
+      "icon": "📘",
+      "name": "Facebook", 
+      "users": "49.4 million",
+      "penetration": "20.4% of population",
+      "ranking": 3,
+      "yearOverYearGrowth": "-14.2%",
+      "peakUsers": "57.6 million (2024)",
+      "demographics": {
+        "male": 62,
+        "female": 38,
+        "primaryAge": "25-34 (34%)"
+      },
+      "contentEngagement": [
+        "News and Current Affairs (42%)",
+        "Entertainment (28%)",
+        "Social and Family Updates (20%)",
+        "Business and Commerce (10%)"
+      ],
+      "businessPages": "1.8 million Pakistani businesses",
+      "timeSpentDaily": "38 minutes average",
+      "note": "Declining users - shift to other platforms, especially among youth"
+    },
+    {
+      "icon": "📷", 
+      "name": "Instagram",
+      "users": "26.4 million",
+      "penetration": "10.9% of population", 
+      "ranking": 4,
+      "yearOverYearGrowth": "+12.8%",
+      "demographics": {
+        "male": 58,
+        "female": 42,
+        "primaryAge": "18-24 (38%)"
+      },
+      "contentPreferences": [
+        "Fashion and Lifestyle (31%)",
+        "Food and Travel (24%)",
+        "Photography (21%)", 
+        "Business and Brands (24%)"
+      ],
+      "businessAccounts": "800,000 Pakistani businesses",
+      "influencers": "50,000+ content creators with 10K+ followers",
+      "note": "Fastest growing platform - popular among youth and businesses"
+    },
+    {
+      "icon": "🎵",
+      "name": "TikTok",
+      "users": "20 million (peak)",
+      "penetration": "8.2% of population",
+      "ranking": 5,
+      "status": "Intermittent bans - multiple government restrictions",
+      "banHistory": [
+        "October 2020 - Banned for 'immoral content'",
+        "Restored November 2020 with conditions",
+        "July 2021 - Banned again",
+        "August 2021 - Restored",
+        "Ongoing regulatory challenges"
+      ],
+      "demographics": {
+        "male": 55,
+        "female": 45,
+        "primaryAge": "16-24 (67%)"
+      },
+      "contentTypes": [
+        "Comedy and Entertainment (45%)",
+        "Dance and Music (25%)", 
+        "Educational Content (15%)",
+        "News and Commentary (15%)"
+      ],
+      "creators": "2 million+ Pakistani content creators",
+      "note": "Controversial but popular - frequent government bans due to content concerns"
+    },
+    {
+      "icon": "🐦",
+      "name": "Twitter",
+      "users": "4.05 million",
+      "penetration": "1.7% of population",
+      "ranking": 6,
+      "yearOverYearGrowth": "-2.1%",
+      "demographics": {
+        "male": 68,
+        "female": 32,
+        "primaryAge": "25-34 (41%)"
+      },
+      "primaryUse": [
+        "News and Current Affairs (54%)",
+        "Politics and Government (23%)",
+        "Sports (18%)",
+        "Technology and Business (5%)"
+      ],
+      "influentialAccounts": "Politicians, journalists, business leaders",
+      "averageTweets": "15 tweets per user per month",
+      "note": "Niche platform - primarily used by educated urban population for news"
+    },
+    {
+      "icon": "💼",
+      "name": "LinkedIn",
+      "users": "3.2 million",
+      "penetration": "1.3% of population",
+      "ranking": 7,
+      "yearOverYearGrowth": "+18.7%",
+      "demographics": {
+        "male": 71,
+        "female": 29,
+        "primaryAge": "25-34 (49%)"
+      },
+      "primaryUse": "Professional networking and job searching",
+      "jobPostings": "50,000+ monthly Pakistani job postings",
+      "companies": "25,000+ Pakistani companies with pages",
+      "note": "Growing among professionals - important for career development"
+    },
+    {
+      "icon": "📺",
+      "name": "Snapchat",
+      "users": "2.8 million",
+      "penetration": "1.2% of population", 
+      "ranking": 8,
+      "yearOverYearGrowth": "+22.1%",
+      "demographics": {
+        "male": 49,
+        "female": 51,
+        "primaryAge": "13-24 (78%)"
+      },
+      "primaryUse": "Photo and video sharing with friends",
+      "averageSnaps": "25 snaps sent daily",
+      "note": "Popular among teenagers - privacy-focused sharing"
+    },
+    {
+      "icon": "💬",
+      "name": "Telegram",
+      "users": "8.5 million",
+      "penetration": "3.5% of population",
+      "ranking": "Messaging app",
+      "yearOverYearGrowth": "+15.3%",
+      "demographics": {
+        "male": 64,
+        "female": 36,
+        "primaryAge": "18-34 (61%)"
+      },
+      "primaryUse": [
+        "Group messaging (48%)",
+        "News channels (28%)",
+        "File sharing (24%)"
+      ],
+      "channels": "10,000+ Pakistani news and content channels",
+      "note": "Popular alternative to WhatsApp - used for larger groups and channels"
+    }
+  ],
+  "trends": {
+    "2020-2021": {
+      "description": "COVID-19 Digital Acceleration",
+      "keyChanges": [
+        "50% increase in social media usage during lockdowns",
+        "TikTok reached peak popularity before bans",
+        "Facebook live streaming increased 400%",
+        "WhatsApp Business adoption grew 300%"
+      ],
+      "newBehaviors": [
+        "Online education via YouTube and Facebook",
+        "Virtual religious gatherings", 
+        "E-commerce through social platforms",
+        "Remote work communication via WhatsApp/Telegram"
+      ]
+    },
+    "2022-2023": {
+      "description": "Platform Diversification",
+      "keyChanges": [
+        "Youth migration from Facebook to Instagram/TikTok",
+        "LinkedIn professional usage doubled",
+        "YouTube Shorts competing with TikTok",
+        "WhatsApp Status becoming primary sharing method"
+      ],
+      "emergingTrends": [
+        "Influencer marketing boom ($50M+ market)",
+        "Live commerce via social platforms",
+        "Social media customer service",
+        "Regional language content increase"
+      ]
+    },
+    "2024-2025": {
+      "description": "Mature Market Dynamics",
+      "keyChanges": [
+        "Facebook user decline accelerates",
+        "Instagram Reels dominance over TikTok",
+        "Professional content creation increase",
+        "AI-generated content emergence"
+      ],
+      "currentTrends": [
+        "Short-form video content supremacy",
+        "Social commerce integration",
+        "Podcast and audio content growth",
+        "Virtual and augmented reality experimentation"
+      ]
+    }
+  },
+  "contentCreation": {
+    "totalCreators": "3.2 million Pakistanis creating content",
+    "fullTimeCreators": "50,000+ making living from content",
+    "topEarners": "Top 100 creators earn $500K+ annually combined",
+    "contentCategories": [
+      {
+        "category": "Entertainment/Comedy",
+        "percentage": 35,
+        "topPlatforms": ["YouTube", "TikTok", "Instagram"]
+      },
+      {
+        "category": "Education/Information",
+        "percentage": 28,
+        "topPlatforms": ["YouTube", "Facebook", "LinkedIn"]
+      },
+      {
+        "category": "Lifestyle/Fashion",
+        "percentage": 22,
+        "topPlatforms": ["Instagram", "YouTube", "TikTok"]
+      },
+      {
+        "category": "News/Politics",
+        "percentage": 15,
+        "topPlatforms": ["YouTube", "Twitter", "Facebook"]
+      }
+    ],
+    "languageBreakdown": {
+      "urdu": 45,
+      "english": 35,
+      "punjabi": 12,
+      "other": 8
+    }
+  },
+  "businessUsage": {
+    "totalBusinesses": "5.3 million Pakistani businesses on social media",
+    "platformPreferences": [
+      {
+        "platform": "WhatsApp Business",
+        "businesses": 2500000,
+        "primaryUse": "Customer communication"
+      },
+      {
+        "platform": "Facebook",
+        "businesses": 1800000,
+        "primaryUse": "Brand awareness and advertising"
+      },
+      {
+        "platform": "Instagram",
+        "businesses": 800000,
+        "primaryUse": "Product showcase and sales"
+      },
+      {
+        "platform": "YouTube",
+        "businesses": 300000,
+        "primaryUse": "Content marketing and tutorials"
+      }
+    ],
+    "socialCommerce": {
+      "marketSize": "$2.5 billion (2025)",
+      "growthRate": "45% annually",
+      "topCategories": ["Fashion", "Electronics", "Food", "Beauty"]
+    },
+    "advertisingSpend": {
+      "total2025": "$180 million",
+      "platformBreakdown": {
+        "Facebook/Instagram": 55,
+        "YouTube": 25,
+        "TikTok": 12,
+        "Others": 8
+      }
+    }
+  },
+  "challenges": {
+    "contentRegulation": {
+      "governmentConcerns": [
+        "Religious and cultural sensitivity",
+        "Political content moderation",
+        "Youth protection from harmful content",
+        "Misinformation and fake news"
+      ],
+      "platformResponses": [
+        "Local content moderation teams",
+        "Cultural sensitivity training",
+        "Government liaison offices",
+        "Stricter community guidelines"
+      ]
+    },
+    "digitalLiteracy": {
+      "issues": [
+        "39.4% gender gap in access",
+        "Rural vs urban digital divide",
+        "Limited understanding of privacy settings",
+        "Susceptibility to misinformation"
+      ],
+      "solutions": [
+        "Government digital literacy programs",
+        "Platform-specific training initiatives",
+        "NGO awareness campaigns",
+        "Educational content creation"
+      ]
+    },
+    "infrastructure": {
+      "limitations": [
+        "Inconsistent internet speeds in rural areas",
+        "Data costs still high for low-income users",
+        "Power outages affecting usage",
+        "Limited 4G coverage in remote areas"
+      ]
+    }
+  },
+  "futurePredictions": {
+    "2025-2027": [
+      "5G adoption will boost video content consumption",
+      "Virtual and augmented reality content emergence",
+      "AI-powered content personalization",
+      "Greater integration between social media and e-commerce",
+      "Regional language content platforms may emerge",
+      "Stricter data protection and privacy regulations"
+    ]
+  }
+}

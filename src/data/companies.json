@@ -1,0 +1,357 @@
+{
+  "telecomOperators": {
+    "companies": [
+      {
+        "name": "Jazz (VEON)",
+        "marketShare": "38%",
+        "subscribers": "75 million",
+        "founded": "1994 (as Mobilink)",
+        "keyMilestone": "First GSM operator in Pakistan, rebranded to Jazz in 2017",
+        "parentCompany": "VEON (Netherlands)",
+        "technologies": ["2G", "3G", "4G", "5G Testing"],
+        "services": ["Voice", "Data", "JazzCash", "JazzTV"],
+        "coverage": "99.2% population coverage",
+        "headquarters": "Islamabad",
+        "revenue2024": "$1.2 billion",
+        "employees": "8,000+",
+        "keyAchievements": [
+          "Largest mobile operator in Pakistan",
+          "JazzCash leading mobile wallet",
+          "First to test 5G in Pakistan"
+        ]
+      },
+      {
+        "name": "Telenor Pakistan",
+        "marketShare": "26%", 
+        "subscribers": "49.19 million",
+        "founded": "2005",
+        "keyMilestone": "Launched EasyPaisa - revolutionized mobile banking in Pakistan",
+        "parentCompany": "Telenor Group (Norway)",
+        "technologies": ["2G", "3G", "4G"],
+        "services": ["Voice", "Data", "EasyPaisa", "Digital Services"],
+        "coverage": "98.5% population coverage",
+        "headquarters": "Islamabad",
+        "revenue2024": "$850 million",
+        "employees": "1,800+",
+        "keyAchievements": [
+          "EasyPaisa serves 50 million users (1 in 4 adult Pakistanis)",
+          "Pioneer in mobile financial services",
+          "Strong rural network coverage"
+        ]
+      },
+      {
+        "name": "Zong (China Mobile)",
+        "marketShare": "23%",
+        "subscribers": "44.8 million", 
+        "founded": "2008",
+        "keyMilestone": "First to achieve 1.5 Gbps 5G speeds in Pakistan (2020)",
+        "parentCompany": "China Mobile Communications Corporation",
+        "technologies": ["2G", "3G", "4G", "5G Testing"],
+        "services": ["Voice", "Data", "Zong Konnect", "Enterprise Solutions"],
+        "coverage": "97.8% population coverage",
+        "headquarters": "Islamabad",
+        "revenue2024": "$780 million",
+        "employees": "2,500+",
+        "keyAchievements": [
+          "First 5G speed test in South Asia",
+          "Fastest 4G network in Pakistan",
+          "Leading in data services"
+        ]
+      },
+      {
+        "name": "Ufone (PTCL)",
+        "marketShare": "13%",
+        "subscribers": "25.28 million",
+        "founded": "2001",
+        "keyMilestone": "Part of PTCL Group - integrated telecom services",
+        "parentCompany": "PTCL (Pakistan Telecommunication Company Limited)",
+        "technologies": ["2G", "3G", "4G"],
+        "services": ["Voice", "Data", "U Microfinance Bank", "Enterprise"],
+        "coverage": "95% population coverage",
+        "headquarters": "Islamabad",
+        "revenue2024": "$420 million",
+        "employees": "5,000+",
+        "keyAchievements": [
+          "Strong brand loyalty in specific regions",
+          "Integration with PTCL fiber network",
+          "Focus on youth market"
+        ]
+      }
+    ]
+  },
+  "internetServiceProviders": {
+    "companies": [
+      {
+        "name": "PTCL (Pakistan Telecommunication Company Limited)",
+        "marketShare": "65%",
+        "subscribers": "3.2 million broadband",
+        "founded": "1996 (privatized 2006)",
+        "keyMilestone": "Etisalat acquired 26% stake for $2.6 billion in 2006",
+        "parentCompany": "Government of Pakistan (58%) + Etisalat (26%)",
+        "technologies": ["DSL", "Fiber", "EVO 4G", "FTTH"],
+        "services": ["Fixed Line", "Broadband", "IPTV", "Enterprise Solutions"],
+        "infrastructure": "70,000+ km fiber optic network",
+        "headquarters": "Islamabad",
+        "revenue2024": "$900 million",
+        "employees": "35,000+",
+        "keyAchievements": [
+          "Pakistan's largest telecom infrastructure owner",
+          "First to launch 3G services (EVO) in 2008",
+          "Backbone provider for most ISPs"
+        ]
+      },
+      {
+        "name": "Nayatel",
+        "marketShare": "8%",
+        "subscribers": "250,000",
+        "founded": "2001",
+        "keyMilestone": "Pioneer in FTTH (Fiber to Home) services in Pakistan",
+        "parentCompany": "Private (Pakistani owned)",
+        "technologies": ["Fiber", "Cable", "Wireless"],
+        "services": ["Internet", "Cable TV", "VoIP", "Enterprise"],
+        "coverage": "Islamabad, Rawalpindi, Lahore, Faisalabad, Peshawar",
+        "headquarters": "Islamabad",
+        "revenue2024": "$45 million",
+        "employees": "2,000+",
+        "keyAchievements": [
+          "Highest customer satisfaction in Pakistan",
+          "100% fiber optic network",
+          "Speeds up to 100 Mbps residential"
+        ]
+      },
+      {
+        "name": "StormFiber",
+        "marketShare": "5%",
+        "subscribers": "180,000",
+        "founded": "2013",
+        "keyMilestone": "First ISP to offer 100 Mbps speeds to residential customers",
+        "parentCompany": "Private (Pakistani owned)",
+        "technologies": ["Fiber"],
+        "services": ["Internet", "IPTV", "Enterprise Solutions"],
+        "coverage": "Karachi, Lahore, Islamabad, Rawalpindi",
+        "headquarters": "Karachi",
+        "revenue2024": "$25 million",
+        "employees": "800+",
+        "keyAchievements": [
+          "Fastest growing fiber ISP",
+          "Premium service provider",
+          "Enterprise-grade residential services"
+        ]
+      }
+    ]
+  },
+  "fintechCompanies": {
+    "companies": [
+      {
+        "name": "EasyPaisa (Telenor)",
+        "marketShare": "35%",
+        "subscribers": "50 million users",
+        "founded": "2009",
+        "keyMilestone": "First to reach 1 in 4 adult Pakistanis - handles 9% of GDP",
+        "parentCompany": "Telenor Pakistan",
+        "services": ["Mobile Wallet", "Bill Payments", "Money Transfer", "Savings", "Loans"],
+        "agentNetwork": "180,000+ agents nationwide",
+        "headquarters": "Islamabad",
+        "transactionVolume2024": "$25 billion",
+        "employees": "2,500+",
+        "keyAchievements": [
+          "Pakistan's largest mobile wallet",
+          "Leader in rural financial inclusion", 
+          "Processes over 1 billion transactions annually"
+        ]
+      },
+      {
+        "name": "JazzCash (Jazz)",
+        "marketShare": "32%",
+        "subscribers": "45 million users",
+        "founded": "2012",
+        "keyMilestone": "Largest agent network with 80,000+ touchpoints",
+        "parentCompany": "Jazz (VEON)",
+        "services": ["Mobile Wallet", "Digital Payments", "Microfinance", "Savings"],
+        "agentNetwork": "80,000+ agents",
+        "headquarters": "Islamabad", 
+        "transactionVolume2024": "$22 billion",
+        "employees": "2,000+",
+        "keyAchievements": [
+          "Largest agent network in Pakistan",
+          "Strong integration with Jazz services",
+          "Leader in P2P transfers"
+        ]
+      },
+      {
+        "name": "SadaPay",
+        "marketShare": "5%",
+        "subscribers": "2 million users",
+        "founded": "2019",
+        "keyMilestone": "Digital-first bank with $20M+ total funding raised",
+        "parentCompany": "Private (VC funded)",
+        "services": ["Digital Banking", "Debit Cards", "Payments", "Savings"],
+        "agentNetwork": "Digital-first (no agents)",
+        "headquarters": "Karachi",
+        "fundingRaised": "$20+ million",
+        "employees": "200+",
+        "keyAchievements": [
+          "First digital-only bank in Pakistan",
+          "Fastest growing fintech startup",
+          "Modern app-based banking experience"
+        ]
+      },
+      {
+        "name": "NayaPay", 
+        "marketShare": "3%",
+        "subscribers": "1.5 million users",
+        "founded": "2019",
+        "keyMilestone": "$13 million seed funding - largest fintech seed round",
+        "parentCompany": "Private (VC funded)",
+        "services": ["Digital Payments", "QR Payments", "Business Solutions"],
+        "agentNetwork": "Partnership with retailers",
+        "headquarters": "Karachi",
+        "fundingRaised": "$13 million",
+        "employees": "150+",
+        "keyAchievements": [
+          "Largest fintech seed funding in Pakistan",
+          "Focus on merchant payments",
+          "Strong QR code adoption"
+        ]
+      },
+      {
+        "name": "Oraan",
+        "marketShare": "2%",
+        "subscribers": "800,000 users",
+        "founded": "2018",
+        "keyMilestone": "$3 million Series A - largest women-led Pakistani startup funding",
+        "parentCompany": "Private (VC funded)",
+        "services": ["Women's Financial Services", "Savings", "Investment", "Insurance"],
+        "agentNetwork": "Women-focused agents",
+        "headquarters": "Karachi",
+        "fundingRaised": "$3 million",
+        "employees": "100+",
+        "keyAchievements": [
+          "Pakistan's first women-focused fintech",
+          "Largest funding for women-led startup",
+          "60% of users are first-time savers"
+        ]
+      }
+    ]
+  },
+  "techCompanies": {
+    "companies": [
+      {
+        "name": "Systems Limited",
+        "marketShare": "Leading IT services",
+        "employees": "6,000+",
+        "founded": "1977",
+        "keyMilestone": "Pakistan's first public IT company on stock exchange",
+        "services": ["Software Development", "BPO", "Digital Transformation"],
+        "globalPresence": "USA, UAE, Malaysia, UK",
+        "headquarters": "Lahore",
+        "revenue2024": "$120 million",
+        "keyAchievements": [
+          "Oldest IT company in Pakistan",
+          "CMMI Level 5 certified",
+          "Serves Fortune 500 clients"
+        ]
+      },
+      {
+        "name": "TRG Pakistan",
+        "marketShare": "Leading BPO",
+        "employees": "8,000+",
+        "founded": "2000",
+        "keyMilestone": "Largest BPO and customer service provider",
+        "services": ["BPO", "Customer Service", "Digital Solutions"],
+        "globalPresence": "UAE, Philippines, USA",
+        "headquarters": "Karachi",
+        "revenue2024": "$95 million",
+        "keyAchievements": [
+          "Largest private sector employer in IT",
+          "24/7 multilingual support services",
+          "ISO certified operations"
+        ]
+      },
+      {
+        "name": "NetSol Technologies",
+        "marketShare": "Automotive finance software",
+        "employees": "4,000+",
+        "founded": "1997",
+        "keyMilestone": "NASDAQ-listed Pakistani IT company",
+        "services": ["Automotive Finance Software", "Leasing Solutions"],
+        "globalPresence": "USA, UK, China, Thailand, Australia",
+        "headquarters": "Lahore",
+        "revenue2024": "$60 million",
+        "keyAchievements": [
+          "First Pakistani company on NASDAQ",
+          "Global leader in automotive finance software",
+          "Serves major auto manufacturers"
+        ]
+      }
+    ]
+  },
+  "ecommerceCompanies": {
+    "companies": [
+      {
+        "name": "Daraz",
+        "marketShare": "70%",
+        "orders": "100+ million annually",
+        "founded": "2012",
+        "keyMilestone": "Acquired by Alibaba Group for undisclosed amount",
+        "parentCompany": "Alibaba Group",
+        "services": ["Online Marketplace", "Logistics", "Payments", "Digital Wallet"],
+        "coverage": "300+ cities across Pakistan",
+        "headquarters": "Karachi",
+        "gmv2024": "$1.5 billion",
+        "employees": "3,000+",
+        "keyAchievements": [
+          "Pakistan's largest e-commerce platform",
+          "11.11 sale records broken annually",
+          "Enabled 100,000+ sellers"
+        ]
+      },
+      {
+        "name": "Foodpanda",
+        "marketShare": "60%",
+        "orders": "50+ million annually",
+        "founded": "2013",
+        "keyMilestone": "Leading food delivery platform acquired by Delivery Hero",
+        "parentCompany": "Delivery Hero (Germany)",
+        "services": ["Food Delivery", "Grocery Delivery", "pandamart"],
+        "coverage": "25+ cities",
+        "headquarters": "Karachi",
+        "gmv2024": "$400 million",
+        "employees": "1,500+",
+        "keyAchievements": [
+          "Market leader in food delivery",
+          "30-minute average delivery time",
+          "50,000+ restaurant partners"
+        ]
+      }
+    ]
+  },
+  "emergingCompanies": {
+    "companies": [
+      {
+        "name": "Tez Financial Services",
+        "sector": "Fintech",
+        "founded": "2016",
+        "keyMilestone": "Largest microfinance digital lending platform",
+        "fundingRaised": "$5 million",
+        "services": ["Digital Lending", "Credit Scoring", "Financial Inclusion"]
+      },
+      {
+        "name": "Taleemabad",
+        "sector": "EdTech", 
+        "founded": "2016",
+        "keyMilestone": "Leading educational technology platform for children",
+        "fundingRaised": "$2.3 million",
+        "services": ["Online Education", "Animated Content", "Teacher Training"]
+      },
+      {
+        "name": "Airlift",
+        "sector": "Logistics (Ceased Operations 2022)",
+        "founded": "2019",
+        "keyMilestone": "Raised $85 million total before closure due to funding challenges",
+        "fundingRaised": "$85 million",
+        "services": ["Mass Transit", "Quick Commerce", "Logistics"]
+      }
+    ]
+  }
+}
