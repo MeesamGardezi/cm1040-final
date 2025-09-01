@@ -32,7 +32,7 @@ class TemplateRenderer {
             // Define template mappings
             const templateMappings = {
                 heroStats: 'hero-stats-template',
-                historicalEvents: 'historical-events-template', 
+                historicalEvents: 'historical-events-template',
                 statistics: 'statistics-template',
                 companies: 'company-template',
                 socialMedia: 'social-media-template',
@@ -59,14 +59,14 @@ class TemplateRenderer {
      */
     compileTemplate(templateName, templateId) {
         const templateElement = document.getElementById(templateId);
-        
+
         if (!templateElement) {
             console.warn(`⚠️ Template element not found: ${templateId}`);
             return;
         }
 
         const templateSource = templateElement.innerHTML;
-        
+
         if (!templateSource.trim()) {
             console.warn(`⚠️ Template source is empty: ${templateId}`);
             return;
@@ -103,7 +103,7 @@ class TemplateRenderer {
             }
 
             // Get target element
-            const targetElement = typeof targetSelector === 'string' 
+            const targetElement = typeof targetSelector === 'string'
                 ? document.querySelector(targetSelector)
                 : targetSelector;
 
@@ -114,13 +114,13 @@ class TemplateRenderer {
 
             // Render template with data
             const renderedHTML = this.compiledTemplates[templateName](data);
-            
+
             // Insert rendered HTML
             targetElement.innerHTML = renderedHTML;
-            
+
             console.log(`✅ Rendered template: ${templateName} into ${targetSelector}`);
             return true;
-            
+
         } catch (error) {
             console.error(`❌ Error rendering template ${templateName}:`, error);
             this.handleRenderError(templateName, targetSelector, error);
@@ -142,28 +142,28 @@ class TemplateRenderer {
      */
     renderFoundationEra(foundationData) {
         const success = [];
-        
+
         // Render PTCL privatization (using historical events template)
         if (foundationData.events && foundationData.events.length > 0) {
-            const ptclEvent = foundationData.events.find(event => 
+            const ptclEvent = foundationData.events.find(event =>
                 event.title.toLowerCase().includes('ptcl privatization')
             );
             if (ptclEvent) {
-                success.push(this.renderTemplate('historicalEvents', 
+                success.push(this.renderTemplate('historicalEvents',
                     { events: [ptclEvent] }, '#ptclPrivatization'));
             }
         }
 
         // Render foundation milestones
-        success.push(this.renderTemplate('historicalEvents', 
+        success.push(this.renderTemplate('historicalEvents',
             { events: foundationData.events }, '#foundationMilestones'));
 
         // Render foundation statistics
-        success.push(this.renderTemplate('statistics', 
+        success.push(this.renderTemplate('statistics',
             { yearlyStats: foundationData.yearlyStats }, '#foundationStats'));
 
         // Render foundation timeline
-        success.push(this.renderTemplate('historicalEvents', 
+        success.push(this.renderTemplate('historicalEvents',
             { events: foundationData.events }, '#foundationTimeline'));
 
         return success.every(result => result === true);
@@ -177,30 +177,32 @@ class TemplateRenderer {
         const success = [];
 
         // Render 3G/4G content
-        const launch3G4G = mobileData.events.find(event => 
+        const launch3G4G = mobileData.events.find(event =>
             event.title.toLowerCase().includes('3g/4g') || event.title.toLowerCase().includes('spectrum auction')
         );
         if (launch3G4G) {
-            success.push(this.renderTemplate('historicalEvents', 
+            success.push(this.renderTemplate('historicalEvents',
                 { events: [launch3G4G] }, '#mobile3G4G'));
         }
 
         // Render social media growth
-        success.push(this.renderTemplate('socialMedia', 
-            { platforms: mobileData.socialMediaGrowth.map(platform => ({
-                icon: this.getSocialMediaIcon(platform.platform),
-                name: platform.platform,
-                users: platform.users || platform.peakUsers,
-                penetration: platform.penetration || `${platform.ranking}`,
-                note: platform.note || platform.status
-            }))}, '#socialMediaGrowth'));
+        success.push(this.renderTemplate('socialMedia',
+            {
+                platforms: mobileData.socialMediaGrowth.map(platform => ({
+                    icon: this.getSocialMediaIcon(platform.platform),
+                    name: platform.platform,
+                    users: platform.users || platform.peakUsers,
+                    penetration: platform.penetration || `${platform.ranking}`,
+                    note: platform.note || platform.status
+                }))
+            }, '#socialMediaGrowth'));
 
         // Render Digital Pakistan Policy
-        const policyEvent = mobileData.events.find(event => 
+        const policyEvent = mobileData.events.find(event =>
             event.title.toLowerCase().includes('digital pakistan policy')
         );
         if (policyEvent) {
-            success.push(this.renderTemplate('historicalEvents', 
+            success.push(this.renderTemplate('historicalEvents',
                 { events: [policyEvent] }, '#digitalPakistanPolicy'));
         }
 
@@ -215,33 +217,37 @@ class TemplateRenderer {
         const success = [];
 
         // Render RAAST revolution
-        const raastEvent = fintechData.events.find(event => 
+        const raastEvent = fintechData.events.find(event =>
             event.title.toLowerCase().includes('raast')
         );
         if (raastEvent) {
-            success.push(this.renderTemplate('historicalEvents', 
+            success.push(this.renderTemplate('historicalEvents',
                 { events: [raastEvent] }, '#raastRevolution'));
         }
 
         // Render mobile banking
-        success.push(this.renderTemplate('companies', 
-            { companies: fintechData.mobileBanking.map(service => ({
-                name: service.service,
-                marketShare: '', // Not applicable for services
-                subscribers: service.users || 'Market leader',
-                founded: service.parent,
-                keyMilestone: service.description
-            }))}, '#mobileBanking'));
+        success.push(this.renderTemplate('companies',
+            {
+                companies: fintechData.mobileBanking.map(service => ({
+                    name: service.service,
+                    marketShare: '', // Not applicable for services
+                    subscribers: service.users || 'Market leader',
+                    founded: service.parent,
+                    keyMilestone: service.description
+                }))
+            }, '#mobileBanking'));
 
         // Render investment boom
-        success.push(this.renderTemplate('companies', 
-            { companies: fintechData.investmentBoom.map(company => ({
-                name: company.company,
-                marketShare: '',
-                subscribers: company.funding,
-                founded: company.type,
-                keyMilestone: company.note || 'Fintech startup'
-            }))}, '#investmentBoom'));
+        success.push(this.renderTemplate('companies',
+            {
+                companies: fintechData.investmentBoom.map(company => ({
+                    name: company.company,
+                    marketShare: '',
+                    subscribers: company.funding,
+                    founded: company.type,
+                    keyMilestone: company.note || 'Fintech startup'
+                }))
+            }, '#investmentBoom'));
 
         return success.every(result => result === true);
     }
@@ -253,12 +259,34 @@ class TemplateRenderer {
     renderSidebarContent(allData) {
         // Render COVID impact (Mobile era sidebar)
         if (allData.mobileEra) {
-            const covidEvent = allData.mobileEra.events.find(event => 
+            const covidEvent = allData.mobileEra.events.find(event =>
                 event.title.toLowerCase().includes('covid')
             );
             if (covidEvent) {
-                this.renderTemplate('historicalEvents', 
+                this.renderTemplate('historicalEvents',
                     { events: [covidEvent] }, '#covidImpact');
+            }
+        }
+
+        // Render policy impact stats - SAFE VERSION
+        if (this.data && this.data.policies && this.data.policies.policies) {
+            const digitalPakistanPolicy = this.data.policies.policies.find(policy =>
+                policy.title.toLowerCase().includes('digital pakistan')
+            );
+            if (digitalPakistanPolicy) {
+                this.renderTemplate('policies',
+                    { policies: [digitalPakistanPolicy] }, '#policyImpactStats');
+            }
+        } else {
+            // Render placeholder if policies data not available
+            const policyPlaceholder = document.querySelector('#policyImpactStats');
+            if (policyPlaceholder) {
+                policyPlaceholder.innerHTML = `
+                <div class="placeholder">
+                    📋 Policy Impact Data<br/>
+                    <small>Loading policy information...</small>
+                </div>
+            `;
             }
         }
 
@@ -273,7 +301,7 @@ class TemplateRenderer {
                     { label: 'Regional First', value: allData.fiveGFuture.regionalFirst }
                 ]
             };
-            this.renderTemplate('infrastructure', 
+            this.renderTemplate('infrastructure',
                 { infrastructure: [fiveGData] }, '#fiveGFuture');
         }
 
@@ -288,7 +316,7 @@ class TemplateRenderer {
                     { label: 'Urban vs Rural', value: `${allData.digitalDivides.geographicGap.urbanAccess} vs ${allData.digitalDivides.geographicGap.ruralAccess}` }
                 ]
             };
-            this.renderTemplate('infrastructure', 
+            this.renderTemplate('infrastructure',
                 { infrastructure: [divideData] }, '#digitalDivide');
         }
     }
@@ -320,7 +348,7 @@ class TemplateRenderer {
     getSocialMediaIcon(platform) {
         const icons = {
             'Facebook': '📘',
-            'YouTube': '📹', 
+            'YouTube': '📹',
             'WhatsApp': '💬',
             'TikTok': '🎵',
             'Twitter': '🐦',
@@ -334,10 +362,10 @@ class TemplateRenderer {
      */
     clearAllContent() {
         const contentSelectors = [
-            '#heroStats', '#ptclPrivatization', '#foundationMilestones', 
+            '#heroStats', '#ptclPrivatization', '#foundationMilestones',
             '#foundationStats', '#foundationTimeline', '#mobile3G4G',
             '#socialMediaGrowth', '#digitalPakistanPolicy', '#raastRevolution',
-            '#mobileBanking', '#investmentBoom', '#covidImpact', 
+            '#mobileBanking', '#investmentBoom', '#covidImpact',
             '#fiveGFuture', '#digitalDivide'
         ];
 
@@ -355,7 +383,7 @@ class TemplateRenderer {
      */
     isReady() {
         const requiredTemplates = ['heroStats', 'historicalEvents', 'statistics', 'companies', 'socialMedia'];
-        return requiredTemplates.every(template => 
+        return requiredTemplates.every(template =>
             this.compiledTemplates[template] !== undefined
         );
     }

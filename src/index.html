@@ -59,12 +59,17 @@
                     </div>
                     
                     <div class="hero-video">
-                        <div class="video-placeholder">
-                            <div class="video-content">
-                                <h3>🎬 From Internet Cafes to 5G</h3>
-                                <p>Auto-playing timeline preview</p>
+                        <video class="hero-timeline-video" autoplay muted loop playsinline poster="assets/images/hero/timeline-preview-poster.jpg">
+                            <source src="assets/videos/hero-timeline-preview.mp4" type="video/mp4">
+                            <source src="assets/videos/hero-timeline-preview.webm" type="video/webm">
+                            <div class="video-fallback">
+                                <img src="assets/images/hero/timeline-preview-poster.jpg" alt="Pakistan Internet Timeline 2006-2025 Preview" />
+                                <div class="video-content">
+                                    <h3>🎬 From Internet Cafes to 5G</h3>
+                                    <p>Auto-playing timeline preview</p>
+                                </div>
                             </div>
-                        </div>
+                        </video>
                     </div>
                     
                     <div class="hero-actions">
@@ -103,8 +108,13 @@
                         <!-- PTCL Privatization Story -->
                         <article class="content-block">
                             <h3>🏢 PTCL Privatization Story <span class="json-badge">JSON</span></h3>
-                            <div class="content-placeholder">
-                                <p>Featured Image: Etisalat signing ceremony</p>
+                            <div class="ptcl-privatization-media">
+                                <img src="assets/images/foundation/ptcl-etisalat-signing-ceremony.jpg" 
+                                     alt="Etisalat PTCL privatization signing ceremony 2006" 
+                                     class="featured-image" />
+                                <div class="image-caption">
+                                    Etisalat acquires 26% stake in PTCL for $2.6 billion - April 2006
+                                </div>
                                 <div id="ptclPrivatization">
                                     <!-- Will be populated by Handlebars template -->
                                 </div>
@@ -114,8 +124,20 @@
                         <!-- Internet Cafe Culture -->
                         <article class="content-block">
                             <h3>☕ Internet Cafe Culture <span class="json-badge">JSON</span></h3>
-                            <div class="content-placeholder">
-                                <p>Image gallery: Pakistan's internet cafes</p>
+                            <div class="internet-cafe-gallery">
+                                <div class="image-gallery">
+                                    <img src="assets/images/foundation/internet-cafe-interior.png" 
+                                         alt="Pakistani internet cafe interior with computers" 
+                                         class="gallery-image main" />
+                                    <div class="gallery-thumbnails">
+                                        <img src="assets/images/foundation/internet-cafe-users.png" 
+                                             alt="Young people using computers in internet cafe" 
+                                             class="gallery-thumb" />
+                                    </div>
+                                </div>
+                                <div class="cafe-stats">
+                                    <div class="stat-highlight">79.3% of users accessed internet via cafes (2012)</div>
+                                </div>
                                 <div id="internetCafeCulture">
                                     <!-- Will be populated by Handlebars template -->
                                 </div>
@@ -125,8 +147,33 @@
                         <!-- Infrastructure Milestones -->
                         <article class="content-block">
                             <h3>🌐 Infrastructure Milestones <span class="json-badge">JSON</span></h3>
-                            <div id="foundationMilestones">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="infrastructure-showcase">
+                                <div class="milestone-images">
+                                    <div class="milestone-item">
+                                        <img src="assets/images/foundation/evo-network-launch.jpg" 
+                                             alt="PTCL EVO network launch ceremony 2008" 
+                                             class="milestone-image" />
+                                        <span class="milestone-year">2008</span>
+                                        <span class="milestone-title">EVO Network Launch</span>
+                                    </div>
+                                    <div class="milestone-item">
+                                        <img src="assets/images/foundation/imewe-submarine-cable.jpg" 
+                                             alt="IMEWE submarine cable infrastructure diagram" 
+                                             class="milestone-image" />
+                                        <span class="milestone-year">2010</span>
+                                        <span class="milestone-title">IMEWE Cable Operational</span>
+                                    </div>
+                                    <div class="milestone-item">
+                                        <img src="assets/images/foundation/3g-4g-auction-day.jpg" 
+                                             alt="Historic 3G/4G spectrum auction April 23 2014" 
+                                             class="milestone-image" />
+                                        <span class="milestone-year">2014</span>
+                                        <span class="milestone-title">Historic 3G/4G Launch</span>
+                                    </div>
+                                </div>
+                                <div id="foundationMilestones">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -136,8 +183,13 @@
                         <!-- Era Growth Statistics -->
                         <div class="stats-card">
                             <h4>📈 Era Growth <span class="json-badge">JSON</span></h4>
-                            <div id="foundationStats">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="stats-chart-container">
+                                <img src="assets/images/foundation/growth-chart-2006-2014.jpg" 
+                                     alt="Internet user growth chart 2006-2014" 
+                                     class="interactive-chart" />
+                                <div id="foundationStats">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </div>
                         
@@ -182,8 +234,27 @@
                         <!-- 3G/4G Explosion -->
                         <article class="content-block">
                             <h3>📱 3G/4G Explosion <span class="json-badge">JSON</span></h3>
-                            <div class="content-placeholder">
-                                <p>Network coverage maps</p>
+                            <div class="network-expansion">
+                                <div class="coverage-comparison">
+                                    <div class="coverage-map">
+                                        <img src="assets/images/mobile/network-coverage-2014.jpg" 
+                                             alt="Pakistan 3G/4G network coverage map 2014" 
+                                             class="coverage-before" />
+                                        <span class="map-label">2014 Launch</span>
+                                    </div>
+                                    <div class="coverage-arrow">→</div>
+                                    <div class="coverage-map">
+                                        <img src="assets/images/mobile/network-coverage-2021.jpg" 
+                                             alt="Pakistan network coverage expansion by 2021" 
+                                             class="coverage-after" />
+                                        <span class="map-label">2021 Coverage</span>
+                                    </div>
+                                </div>
+                                <div class="smartphone-adoption">
+                                    <img src="assets/images/mobile/smartphone-adoption-pakistan.jpg" 
+                                         alt="Smartphone usage growth in Pakistan" 
+                                         class="adoption-chart" />
+                                </div>
                                 <div id="mobile3G4G">
                                     <!-- Will be populated by Handlebars template -->
                                 </div>
@@ -193,16 +264,57 @@
                         <!-- Social Media Rise -->
                         <article class="content-block">
                             <h3>📺 Social Media Rise <span class="json-badge">JSON</span></h3>
-                            <div id="socialMediaGrowth">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="social-media-showcase">
+                                <div class="platform-growth">
+                                    <div class="platform-card facebook">
+                                        <img src="assets/images/mobile/facebook-users-pakistan.jpg" 
+                                             alt="Facebook user growth in Pakistan reaching 57.6 million" 
+                                             class="platform-chart" />
+                                        <div class="platform-stats">
+                                            <span class="platform-name">Facebook</span>
+                                            <span class="peak-users">Peak: 57.6M users</span>
+                                        </div>
+                                    </div>
+                                    <div class="platform-card youtube">
+                                        <img src="assets/images/mobile/youtube-pakistan-users.jpg" 
+                                             alt="YouTube popularity in Pakistan - 71.7 million users" 
+                                             class="platform-chart" />
+                                        <div class="platform-stats">
+                                            <span class="platform-name">YouTube</span>
+                                            <span class="current-users">71.7M users</span>
+                                        </div>
+                                    </div>
+                                    <div class="platform-card tiktok">
+                                        <img src="assets/images/mobile/tiktok-ban-cycle-pakistan.jpg" 
+                                             alt="TikTok ban and restoration cycle in Pakistan" 
+                                             class="platform-chart" />
+                                        <div class="platform-stats">
+                                            <span class="platform-name">TikTok</span>
+                                            <span class="peak-users">Peak: 20M users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="socialMediaGrowth">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </article>
                         
                         <!-- Digital Pakistan Policy -->
                         <article class="content-block">
                             <h3>🏛️ Digital Pakistan Policy (2018) <span class="json-badge">JSON</span></h3>
-                            <div id="digitalPakistanPolicy">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="policy-showcase">
+                                <img src="assets/images/mobile/digital-pakistan-policy-launch.jpg" 
+                                     alt="Digital Pakistan Policy 2018 launch ceremony" 
+                                     class="policy-image" />
+                                <div class="policy-results">
+                                    <img src="assets/images/mobile/policy-achievements-2024.jpg" 
+                                         alt="Digital Pakistan Policy achievements by 2024" 
+                                         class="results-chart" />
+                                </div>
+                                <div id="digitalPakistanPolicy">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -212,16 +324,31 @@
                         <!-- Policy Impact -->
                         <div class="stats-card">
                             <h4>🎛️ Policy Impact <span class="json-badge">JSON</span></h4>
-                            <div id="policyImpactStats">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="policy-metrics">
+                                <img src="assets/images/mobile/ict-exports-growth.jpg" 
+                                     alt="ICT exports growth from policy implementation" 
+                                     class="metrics-chart" />
+                                <div id="policyImpactStats">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </div>
                         
                         <!-- COVID-19 Acceleration -->
                         <div class="timeline-mini">
                             <h4>🦠 COVID-19 Acceleration</h4>
-                            <div id="covidImpact">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="covid-impact">
+                                <img src="assets/images/mobile/teleschool-pakistan-covid.jpg" 
+                                     alt="TeleSchool program during COVID-19 in Pakistan" 
+                                     class="covid-image" />
+                                <div class="covid-stats">
+                                    <div class="stat-item">📺 TeleSchool: 6M children weekly</div>
+                                    <div class="stat-item">📈 19% internet user growth</div>
+                                    <div class="stat-item">💻 Digital learning surge</div>
+                                </div>
+                                <div id="covidImpact">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </div>
                         
@@ -258,24 +385,84 @@
                         <!-- RAAST Revolution -->
                         <article class="content-block">
                             <h3>💳 RAAST Revolution <span class="json-badge">JSON</span></h3>
-                            <div id="raastRevolution">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="raast-showcase">
+                                <img src="assets/images/fintech/raast-launch-ceremony.jpg" 
+                                     alt="RAAST instant payment system launch ceremony January 2021" 
+                                     class="raast-launch" />
+                                <div class="raast-stats">
+                                    <div class="stat-visual">
+                                        <img src="assets/images/fintech/raast-transaction-volume.jpg" 
+                                             alt="RAAST 1.5 billion transactions visualization" 
+                                             class="transaction-chart" />
+                                    </div>
+                                    <div class="stat-visual">
+                                        <img src="assets/images/fintech/raast-value-processed.jpg" 
+                                             alt="Rs34+ trillion value processed through RAAST" 
+                                             class="value-chart" />
+                                    </div>
+                                </div>
+                                <div id="raastRevolution">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </article>
                         
                         <!-- Mobile Banking Dominance -->
                         <article class="content-block">
                             <h3>📱 Mobile Banking Dominance <span class="json-badge">JSON</span></h3>
-                            <div id="mobileBanking">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="mobile-banking-showcase">
+                                <div class="banking-platforms">
+                                    <div class="platform-showcase easypaisa">
+                                        <img src="assets/images/fintech/easypaisa-app-interface.jpg" 
+                                             alt="EasyPaisa mobile app interface and features" 
+                                             class="app-interface" />
+                                        <img src="assets/images/fintech/easypaisa-50-million-users.jpg" 
+                                             alt="EasyPaisa reaches 50 million users milestone" 
+                                             class="user-milestone" />
+                                        <div class="platform-stats">
+                                            <span class="platform-name">EasyPaisa</span>
+                                            <span class="user-count">50M users</span>
+                                            <span class="market-position">1 in 4 adult Pakistanis</span>
+                                        </div>
+                                    </div>
+                                    <div class="platform-showcase jazzcash">
+                                        <img src="assets/images/fintech/jazzcash-agent-network.jpg" 
+                                             alt="JazzCash agent network across Pakistan" 
+                                             class="agent-network" />
+                                        <img src="assets/images/fintech/jazzcash-app-services.jpg" 
+                                             alt="JazzCash mobile banking services" 
+                                             class="services-overview" />
+                                        <div class="platform-stats">
+                                            <span class="platform-name">JazzCash</span>
+                                            <span class="agent-count">80,000+ agents</span>
+                                            <span class="market-position">Market leader</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mobileBanking">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </article>
                         
                         <!-- Digital Divide Challenges -->
                         <article class="content-block">
                             <h3>⚖️ Digital Divide Challenges <span class="json-badge">JSON</span></h3>
-                            <div id="digitalDivide">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="digital-divide-analysis">
+                                <div class="divide-visualization">
+                                    <img src="assets/images/fintech/gender-gap-pakistan-internet.jpg" 
+                                         alt="Pakistan's 39.4% gender gap in internet access - world's highest" 
+                                         class="gender-gap-chart" />
+                                    <img src="assets/images/fintech/urban-rural-digital-divide.jpg" 
+                                         alt="Urban vs rural internet access disparity in Pakistan" 
+                                         class="geographic-divide" />
+                                    <img src="assets/images/fintech/economic-barriers-internet.jpg" 
+                                         alt="Economic barriers to internet access in Pakistan" 
+                                         class="economic-barriers" />
+                                </div>
+                                <div id="digitalDivide">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -285,21 +472,74 @@
                         <!-- 5G Future -->
                         <div class="stats-card">
                             <h4>🚀 5G Future <span class="json-badge">JSON</span></h4>
-                            <div id="fiveGFuture">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="fiveg-preview">
+                                <img src="assets/images/fintech/5g-tower-installation-pakistan.jpg" 
+                                     alt="5G infrastructure preparation in Pakistan" 
+                                     class="fiveg-infrastructure" />
+                                <img src="assets/images/fintech/5g-speed-test-1-5gbps.jpg" 
+                                     alt="5G speed test achieving 1.5 Gbps in Pakistan" 
+                                     class="speed-test" />
+                                <div class="fiveg-timeline">
+                                    <div class="timeline-item">
+                                        <span class="timeline-date">June-July 2025</span>
+                                        <span class="timeline-event">Commercial Launch</span>
+                                    </div>
+                                </div>
+                                <div id="fiveGFuture">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Investment Boom -->
                         <div class="timeline-mini">
                             <h4>💰 Investment Boom</h4>
-                            <div id="investmentBoom">
-                                <!-- Will be populated by Handlebars template -->
+                            <div class="investment-showcase">
+                                <img src="assets/images/fintech/fintech-investments-300-million.jpg" 
+                                     alt="$300+ million fintech investments in Pakistan" 
+                                     class="investment-overview" />
+                                <div class="startup-highlights">
+                                    <div class="startup-item">
+                                        <img src="assets/images/fintech/sadapay-funding-rounds.jpg" 
+                                             alt="SadaPay funding rounds totaling $20+ million" 
+                                             class="startup-funding" />
+                                        <span class="startup-name">SadaPay</span>
+                                        <span class="funding-amount">$20M+</span>
+                                    </div>
+                                    <div class="startup-item">
+                                        <img src="assets/images/fintech/nayapay-seed-funding.jpg" 
+                                             alt="NayaPay $13 million seed funding round" 
+                                             class="startup-funding" />
+                                        <span class="startup-name">NayaPay</span>
+                                        <span class="funding-amount">$13M</span>
+                                    </div>
+                                    <div class="startup-item">
+                                        <img src="assets/images/fintech/oraan-series-a-funding.jpg" 
+                                             alt="Oraan $3 million Series A funding - women-led startup" 
+                                             class="startup-funding" />
+                                        <span class="startup-name">Oraan</span>
+                                        <span class="funding-amount">$3M</span>
+                                    </div>
+                                </div>
+                                <div id="investmentBoom">
+                                    <!-- Will be populated by Handlebars template -->
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Journey Complete -->
-                        
+                        <div class="journey-complete">
+                            <div class="complete-content">
+                                <h4>Journey Complete! 🎉</h4>
+                                <p>You've explored 19 years of Pakistan's digital transformation</p>
+                                <button class="btn btn-primary" onclick="showAllStats()">
+                                    View Full Statistics
+                                </button>
+                                <button class="btn btn-secondary" onclick="restartJourney()">
+                                    Restart Journey
+                                </button>
+                            </div>
+                        </div>
                     </aside>
                 </div>
             </div>
