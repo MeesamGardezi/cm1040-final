@@ -1,6 +1,6 @@
 /**
- * Pakistan Internet Timeline - Component Styles
- * Reusable components and UI elements
+ * Pakistan Internet Timeline - Component Styles (Improved Design)
+ * Modern, clean reusable components with professional styling
  */
 
 /* =============================================================================
@@ -11,64 +11,66 @@
 .card {
     background: white;
     border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
     transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e2e8f0;
 }
 
 .card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
     transform: translateY(-2px);
 }
 
 /* Info Card */
 .info-card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-    border-left: 4px solid #3498db;
-    padding: 20px;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border-left: 4px solid #0891b2;
+    padding: 18px;
     border-radius: 8px;
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
 .info-card-header {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;
+    gap: 8px;
+    margin-bottom: 10px;
 }
 
 .info-card-icon {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
 }
 
 .info-card-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin: 0;
+    font-size: 0.95rem;
 }
 
 .info-card-content {
-    color: #34495e;
+    color: #475569;
     line-height: 1.5;
+    font-size: 0.9rem;
 }
 
 /* Success Card */
 .success-card {
-    border-left-color: #27ae60;
-    background: linear-gradient(135deg, #e8f8f5 0%, #ffffff 100%);
+    border-left-color: #0891b2;
+    background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
 }
 
 /* Warning Card */
 .warning-card {
-    border-left-color: #f39c12;
-    background: linear-gradient(135deg, #fef5e7 0%, #ffffff 100%);
+    border-left-color: #d97706;
+    background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
 }
 
 /* Danger Card */
 .danger-card {
-    border-left-color: #e74c3c;
-    background: linear-gradient(135deg, #fadbd8 0%, #ffffff 100%);
+    border-left-color: #e11d48;
+    background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
 }
 
 /* =============================================================================
@@ -84,71 +86,72 @@
 .timeline::before {
     content: '';
     position: absolute;
-    left: 30px;
+    left: 28px;
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, #3498db, #2ecc71, #f39c12, #e74c3c);
+    background: linear-gradient(to bottom, #0891b2, #10b981, #d97706, #e11d48);
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 30px;
-    padding-left: 70px;
+    margin-bottom: 24px;
+    padding-left: 65px;
 }
 
 .timeline-marker {
     position: absolute;
-    left: 21px;
-    top: 8px;
-    width: 18px;
-    height: 18px;
-    background: #3498db;
+    left: 20px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: #0891b2;
     border: 3px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.25);
 }
 
 .timeline-marker.foundation {
-    background: #27ae60;
-    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+    background: #0891b2;
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.25);
 }
 
 .timeline-marker.mobile {
-    background: #f39c12;
-    box-shadow: 0 2px 8px rgba(243, 156, 18, 0.3);
+    background: #d97706;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
 }
 
 .timeline-marker.fintech {
-    background: #e74c3c;
-    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+    background: #e11d48;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
 }
 
 .timeline-content {
     background: white;
-    padding: 20px;
+    padding: 16px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-left: 3px solid #3498db;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    border-left: 3px solid #0891b2;
 }
 
 .timeline-date {
-    color: #3498db;
+    color: #0891b2;
     font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
 }
 
 .timeline-title {
-    color: #2c3e50;
-    margin: 0 0 12px 0;
-    font-size: 1.1rem;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
 }
 
 .timeline-description {
-    color: #34495e;
+    color: #475569;
     line-height: 1.5;
     margin-bottom: 0;
+    font-size: 0.9rem;
 }
 
 /* Compact Timeline */
@@ -162,23 +165,23 @@
 }
 
 .timeline-compact .timeline-item {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding-left: 0;
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 12px;
 }
 
 .timeline-compact .timeline-marker {
     position: static;
-    margin-top: 5px;
+    margin-top: 4px;
     flex-shrink: 0;
 }
 
 .timeline-compact .timeline-content {
     border-left: none;
     border-radius: 6px;
-    padding: 15px;
+    padding: 12px;
     flex: 1;
 }
 
@@ -188,65 +191,65 @@
 
 .badge {
     display: inline-block;
-    padding: 4px 12px;
-    font-size: 0.75rem;
+    padding: 3px 10px;
+    font-size: 0.7rem;
     font-weight: 600;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: 12px;
+    border-radius: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 .badge-primary {
     color: #ffffff;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #0891b2, #0e7490);
 }
 
 .badge-success {
     color: #ffffff;
-    background: linear-gradient(135deg, #27ae60, #229954);
+    background: linear-gradient(135deg, #10b981, #059669);
 }
 
 .badge-warning {
     color: #ffffff;
-    background: linear-gradient(135deg, #f39c12, #e67e22);
+    background: linear-gradient(135deg, #d97706, #b45309);
 }
 
 .badge-danger {
     color: #ffffff;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #e11d48, #be185d);
 }
 
 .badge-info {
     color: #ffffff;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #0891b2, #0e7490);
 }
 
 .badge-light {
-    color: #2c3e50;
-    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    color: #1e293b;
+    background: linear-gradient(135deg, #f1f5f9, #cbd5e1);
 }
 
 .badge-dark {
     color: #ffffff;
-    background: linear-gradient(135deg, #34495e, #2c3e50);
+    background: linear-gradient(135deg, #475569, #334155);
 }
 
 /* JSON Badge (special styling) */
 .json-badge {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
+    background: linear-gradient(135deg, #d97706, #ea580c);
     color: white;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 0.65rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.6rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-left: 8px;
-    box-shadow: 0 2px 6px rgba(243, 156, 18, 0.3);
+    letter-spacing: 0.4px;
+    margin-left: 6px;
+    box-shadow: 0 2px 6px rgba(217, 119, 6, 0.25);
 }
 
 /* =============================================================================
@@ -255,10 +258,10 @@
 
 .progress {
     display: flex;
-    height: 8px;
+    height: 6px;
     overflow: hidden;
-    background-color: #e9ecef;
-    border-radius: 4px;
+    background-color: #f1f5f9;
+    border-radius: 3px;
 }
 
 .progress-bar {
@@ -268,9 +271,9 @@
     color: #ffffff;
     text-align: center;
     white-space: nowrap;
-    background: linear-gradient(90deg, #3498db, #2ecc71);
+    background: linear-gradient(90deg, #0891b2, #10b981);
     transition: width 0.3s ease;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .progress-striped .progress-bar {
@@ -290,10 +293,10 @@
 /* Circular Progress */
 .progress-circle {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: conic-gradient(#3498db 0deg, #e9ecef 0deg);
+    background: conic-gradient(#0891b2 0deg, #f1f5f9 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,17 +305,17 @@
 .progress-circle::before {
     content: '';
     position: absolute;
-    width: 46px;
-    height: 46px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: #ffffff;
 }
 
 .progress-circle-text {
     position: relative;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
 }
 
 /* =============================================================================
@@ -321,25 +324,25 @@
 
 .alert {
     position: relative;
-    padding: 16px 20px;
-    margin-bottom: 20px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
     border: 1px solid transparent;
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
 }
 
 .alert-dismissible {
-    padding-right: 50px;
+    padding-right: 45px;
 }
 
 .alert-dismissible .btn-close {
     position: absolute;
     top: 50%;
-    right: 16px;
+    right: 14px;
     transform: translateY(-50%);
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     cursor: pointer;
     opacity: 0.7;
 }
@@ -382,11 +385,11 @@
 .alert-with-icon {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
 }
 
 .alert-icon {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     margin-top: 2px;
     flex-shrink: 0;
 }
@@ -407,11 +410,11 @@
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
-    background: #2c3e50;
+    background: #1e293b;
     color: white;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
@@ -426,8 +429,8 @@
     bottom: 115%;
     left: 50%;
     transform: translateX(-50%);
-    border: 5px solid transparent;
-    border-top-color: #2c3e50;
+    border: 4px solid transparent;
+    border-top-color: #1e293b;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -444,10 +447,10 @@
    ============================================================================= */
 
 .loading-spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #e9ecef;
-    border-top: 4px solid #3498db;
+    width: 35px;
+    height: 35px;
+    border: 3px solid #f1f5f9;
+    border-top: 3px solid #0891b2;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -469,7 +472,7 @@
 }
 
 .skeleton {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
     background-size: 200% 100%;
     animation: loading 1.5s infinite;
 }
@@ -480,22 +483,22 @@
 }
 
 .skeleton-text {
-    height: 16px;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    height: 14px;
+    border-radius: 3px;
+    margin-bottom: 6px;
 }
 
 .skeleton-title {
-    height: 24px;
-    border-radius: 6px;
-    margin-bottom: 12px;
+    height: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
     width: 60%;
 }
 
 .skeleton-paragraph {
-    height: 12px;
-    border-radius: 3px;
-    margin-bottom: 6px;
+    height: 10px;
+    border-radius: 2px;
+    margin-bottom: 4px;
 }
 
 .skeleton-paragraph:last-child {
@@ -509,14 +512,14 @@
 /* Scroll Hint */
 .scroll-hint {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: rgba(44, 62, 80, 0.9);
+    bottom: 25px;
+    right: 25px;
+    background: rgba(30, 41, 59, 0.9);
     color: white;
-    padding: 12px 20px;
-    border-radius: 25px;
-    font-size: 0.85rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     animation: bounce 2s infinite;
     z-index: 1000;
@@ -527,21 +530,21 @@
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
     60% {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
 }
 
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    bottom: 25px;
+    left: 25px;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #0891b2, #0e7490);
     color: white;
     border: none;
     border-radius: 50%;
@@ -549,8 +552,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    font-size: 1.125rem;
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
@@ -564,21 +567,21 @@
 }
 
 .back-to-top:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(8, 145, 178, 0.4);
 }
 
 /* Dividers */
 .divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, #e9ecef, transparent);
-    margin: 30px 0;
+    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+    margin: 24px 0;
 }
 
 .divider-text {
     position: relative;
     text-align: center;
-    margin: 30px 0;
+    margin: 24px 0;
 }
 
 .divider-text::before {
@@ -588,14 +591,14 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
 }
 
 .divider-text span {
     background: white;
-    padding: 0 20px;
-    color: #7f8c8d;
-    font-size: 0.9rem;
+    padding: 0 16px;
+    color: #64748b;
+    font-size: 0.85rem;
     position: relative;
     z-index: 1;
 }
@@ -606,44 +609,137 @@
 
 @media (max-width: 768px) {
     .card {
-        padding: 20px;
+        padding: 16px;
     }
     
     .timeline::before {
-        left: 20px;
+        left: 18px;
     }
     
     .timeline-item {
-        padding-left: 50px;
+        padding-left: 45px;
     }
     
     .timeline-marker {
-        left: 11px;
-        width: 16px;
-        height: 16px;
+        left: 10px;
+        width: 14px;
+        height: 14px;
     }
     
     .timeline-content {
-        padding: 15px;
+        padding: 12px;
     }
     
     .scroll-hint {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 16px;
-        font-size: 0.8rem;
+        bottom: 18px;
+        right: 18px;
+        padding: 8px 12px;
+        font-size: 0.75rem;
     }
     
     .back-to-top {
-        bottom: 20px;
-        left: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
+        bottom: 18px;
+        left: 18px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
     
     .tooltip::before {
-        font-size: 0.75rem;
-        padding: 6px 10px;
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+    
+    .info-card {
+        padding: 14px;
+    }
+    
+    .info-card-title {
+        font-size: 0.875rem;
+    }
+    
+    .info-card-content {
+        font-size: 0.825rem;
+    }
+    
+    .badge {
+        font-size: 0.65rem;
+        padding: 2px 8px;
+    }
+    
+    .json-badge {
+        font-size: 0.55rem;
+        padding: 2px 6px;
+    }
+    
+    .progress-circle {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .progress-circle::before {
+        width: 33px;
+        height: 33px;
+    }
+    
+    .progress-circle-text {
+        font-size: 0.7rem;
+    }
+    
+    .alert {
+        padding: 12px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .loading-spinner {
+        width: 30px;
+        height: 30px;
+        border-width: 2px;
+    }
+}
+
+/* =============================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================================================= */
+
+/* Focus states */
+.btn:focus,
+.nav-link:focus {
+    outline: 2px solid #0891b2;
+    outline-offset: 2px;
+}
+
+.alert-dismissible .btn-close:focus {
+    outline: 2px solid #0891b2;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .loading-spinner,
+    .progress-animated .progress-bar,
+    .scroll-hint {
+        animation: none;
+    }
+    
+    .card,
+    .back-to-top,
+    .btn {
+        transition: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid #0f172a;
+    }
+    
+    .timeline-marker {
+        border: 4px solid #ffffff;
+    }
+    
+    .badge {
+        border: 1px solid #0f172a;
     }
 }
