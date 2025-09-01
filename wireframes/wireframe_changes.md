@@ -1,4 +1,4 @@
-I discussed with my parents, and took help from AI to improve this. These are the changes I made:
+I discussed the design with my parents, and took help from AI to improve this. These are the changes I made:
 
 **Visual stuff:**
 - Changed boring solid borders to dashed ones with gradients

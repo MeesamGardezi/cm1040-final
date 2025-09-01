@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Internet Timeline - Single Page Scroller Wireframes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .wireframe-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .device-label {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+        
+        .device-label:first-of-type {
+            margin-top: 0;
+        }
+        
+        /* Desktop Wireframe Styles */
+        .desktop-wireframe {
+            background: white;
+            border: 3px solid #e74c3c;
+            margin: 0;
+            min-height: 800px;
+        }
+        
+        .fixed-header {
+            background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+            color: white;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid #27ae60;
+        }
+        
+        .logo-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-item {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .nav-item.active {
+            background: rgba(255,255,255,0.3);
+            font-weight: bold;
+        }
+        
+        .scroll-indicator {
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            margin-top: 10px;
+        }
+        
+        .scroll-progress {
+            height: 100%;
+            background: #f39c12;
+            width: 33%;
+            border-radius: 2px;
+        }
+        
+        /* Section Styles */
+        .section {
+            min-height: 100vh;
+            padding: 60px 40px;
+            border-bottom: 4px dashed #bdc3c7;
+            position: relative;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-hero {
+            background: linear-gradient(135deg, #f4ecf7 0%, #fff 100%);
+            border-left: 8px solid #9b59b6;
+        }
+        
+        .section-foundation {
+            background: linear-gradient(135deg, #e8f8f5 0%, #fff 100%);
+            border-left: 8px solid #27ae60;
+        }
+        
+        .section-mobile {
+            background: linear-gradient(135deg, #fef5e7 0%, #fff 100%);
+            border-left: 8px solid #f39c12;
+        }
+        
+        .section-fintech {
+            background: linear-gradient(135deg, #fadbd8 0%, #fff 100%);
+            border-left: 8px solid #e74c3c;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-number {
+            display: inline-block;
+            background: #34495e;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .main-content {
+            space-y: 30px;
+        }
+        
+        .content-block {
+            background: white;
+            border: 2px dashed #95a5a6;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .sidebar {
+            space-y: 20px;
+        }
+        
+        .stats-card {
+            background: white;
+            border: 2px solid #3498db;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+        }
+        
+        .timeline-mini {
+            background: white;
+            border: 2px solid #e74c3c;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .json-badge {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .placeholder {
+            background: #ecf0f1;
+            border: 2px dashed #95a5a6;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            color: #7f8c8d;
+            border-radius: 8px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Mobile Wireframe Styles */
+        .mobile-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .mobile-frame {
+            width: 375px;
+            height: 800px;
+            background: #2c3e50;
+            border-radius: 30px;
+            padding: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .mobile-screen {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 22px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .mobile-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .mobile-progress-bar {
+            height: 3px;
+            background: rgba(255,255,255,0.3);
+            margin-top: 8px;
+        }
+        
+        .mobile-progress {
+            height: 100%;
+            background: #f39c12;
+            width: 45%;
+            border-radius: 2px;
+        }
+        
+        .mobile-content {
+            flex: 1;
+            overflow-y: auto;
+            background: white;
+        }
+        
+        .mobile-section {
+            min-height: 100vh;
+            padding: 30px 20px;
+            border-bottom: 3px dashed #bdc3c7;
+        }
+        
+        .mobile-section:last-child {
+            border-bottom: none;
+        }
+        
+        .mobile-section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .mobile-section-number {
+            width: 30px;
+            height: 30px;
+            background: #34495e;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .mobile-section-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .mobile-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .mobile-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .mobile-stat-card {
+            background: white;
+            border: 2px solid #3498db;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .scroll-hint {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #34495e;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section-transition {
+            height: 60px;
+            background: linear-gradient(to bottom, transparent, rgba(189, 195, 199, 0.3));
+            margin: -30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-header">
+        Pakistan Internet Timeline - Single Page Scroller Wireframes
+        <div style="font-size: 16px; margin-top: 8px; opacity: 0.9;">
+            Continuous scroll experience with three seamless sections
+        </div>
+    </div>
+
+    <!-- DESKTOP SINGLE PAGE SCROLLER -->
+    <div class="device-label">DESKTOP - Single Page Scroller Experience</div>
+    
+    <div class="desktop-wireframe">
+        <!-- Fixed Header with Progress -->
+        <div class="fixed-header">
+            <div class="logo-nav">
+                <div style="font-size: 20px; font-weight: bold;">Digital Pakistan Timeline</div>
+                <div class="nav-menu">
+                    <div class="nav-item active">Hero</div>
+                    <div class="nav-item">Foundation (2006-14)</div>
+                    <div class="nav-item">Mobile Revolution (2014-21)</div>
+                    <div class="nav-item">Fintech Era (2021-25)</div>
+                    <div class="nav-item">Statistics</div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-progress"></div>
+            </div>
+            <div style="text-align: center; margin-top: 5px; font-size: 12px; opacity: 0.8;">
+                📍 Currently viewing: Foundation Era (33% through timeline)
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="section section-hero">
+            <div class="section-header">
+                <div class="section-number" style="background: #9b59b6;">🏠</div>
+                <div class="section-title">19 Years of Digital Evolution</div>
+                <div class="section-subtitle">Pakistan's Internet Journey: 2006-2025</div>
+            </div>
+            
+            <div style="text-align: center; margin: 50px 0;">
+                <div class="placeholder" style="height: 300px; font-size: 18px;">
+                    🎬 Hero Video/Animation<br/>
+                    "From Internet Cafes to 5G"<br/>
+                    <small>Auto-playing timeline preview</small>
+                </div>
+                <div style="margin-top: 30px;">
+                    <div style="display: inline-flex; gap: 20px;">
+                        <button style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 15px 30px; border-radius: 25px; font-weight: bold; cursor: pointer;">
+                            Start Journey ↓
+                        </button>
+                        <button style="background: transparent; border: 2px solid #9b59b6; color: #9b59b6; padding: 15px 30px; border-radius: 25px; font-weight: bold; cursor: pointer;">
+                            View Statistics 📊
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px;">
+                <div class="stats-card">
+                    <h3>📊 Current Users <span class="json-badge">JSON</span></h3>
+                    <div style="font-size: 32px; color: #3498db; margin: 15px 0;">135.5M</div>
+                    <div style="color: #7f8c8d;">53.57% penetration rate</div>
+                </div>
+                <div class="stats-card">
+                    <h3>🚀 Growth Journey <span class="json-badge">JSON</span></h3>
+                    <div style="font-size: 32px; color: #27ae60; margin: 15px 0;">1,331%</div>
+                    <div style="color: #7f8c8d;">From 10.17M in 2006</div>
+                </div>
+                <div class="stats-card">
+                    <h3>📱 5G Launch <span class="json-badge">JSON</span></h3>
+                    <div style="font-size: 32px; color: #e74c3c; margin: 15px 0;">2025</div>
+                    <div style="color: #7f8c8d;">1.5 Gbps speeds tested</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-transition">↓ Scroll to explore Foundation Era (2006-2014) ↓</div>
+
+        <!-- Foundation Era Section -->
+        <div class="section section-foundation">
+            <div class="section-header">
+                <div class="section-number" style="background: #27ae60;">1</div>
+                <div class="section-title">Foundation Era</div>
+                <div class="section-subtitle">Building Digital Infrastructure (2006-2014)</div>
+            </div>
+
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="content-block">
+                        <h3>🏢 PTCL Privatization Story <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">Featured Image: Etisalat signing ceremony</div>
+                        <div class="placeholder">$2.6 billion investment impact analysis</div>
+                        <div class="placeholder">Market liberalization effects</div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h3>☕ Internet Cafe Culture <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">Image gallery: Pakistan's internet cafes</div>
+                        <div class="placeholder">79.3% of users accessed via cafes</div>
+                        <div class="placeholder">Cultural transformation stories</div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h3>🌐 Infrastructure Milestones <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">EVO network launch (2008)</div>
+                        <div class="placeholder">IMEWE submarine cable (2010)</div>
+                        <div class="placeholder">Historic 3G/4G auction day (April 23, 2014)</div>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="stats-card">
+                        <h4>📈 Era Growth <span class="json-badge">JSON</span></h4>
+                        <div class="placeholder">Interactive growth chart</div>
+                        <div style="margin-top: 15px;">
+                            <div>2006: <strong>10.17M users</strong></div>
+                            <div>2012: <strong>17.67M users</strong></div>
+                            <div>2014: <strong>30M+ users</strong></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-mini">
+                        <h4>🎯 Key Events <span class="json-badge">JSON</span></h4>
+                        <div style="text-align: left; margin-top: 15px;">
+                            <div style="margin: 10px 0;">📅 2006: PTCL Privatization</div>
+                            <div style="margin: 10px 0;">📅 2008: EVO Launch</div>
+                            <div style="margin: 10px 0;">📅 2010: IMEWE Cable</div>
+                            <div style="margin: 10px 0;">📅 2014: 3G/4G Auction</div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #e8f8f5; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="color: #27ae60; font-weight: bold; margin-bottom: 10px;">Next Section</div>
+                        <button style="background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 20px; cursor: pointer;">
+                            Mobile Revolution →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-transition">↓ Continue to Mobile Revolution (2014-2021) ↓</div>
+
+        <!-- Mobile Revolution Section -->
+        <div class="section section-mobile">
+            <div class="section-header">
+                <div class="section-number" style="background: #f39c12;">2</div>
+                <div class="section-title">Mobile Revolution</div>
+                <div class="section-subtitle">Smartphones & Social Media Boom (2014-2021)</div>
+            </div>
+
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="content-block">
+                        <h3>📱 3G/4G Explosion <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">Network coverage maps</div>
+                        <div class="placeholder">Smartphone adoption rates</div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h3>📺 Social Media Rise <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">Facebook: 57.6M peak users</div>
+                        <div class="placeholder">YouTube: 71.7M users</div>
+                        <div class="placeholder">TikTok boom & ban cycles</div>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="stats-card">
+                        <h4>🎛️ Policy Impact <span class="json-badge">JSON</span></h4>
+                        <div class="placeholder">Digital Pakistan Policy results</div>
+                    </div>
+                    
+                    <div class="timeline-mini">
+                        <h4>🦠 COVID-19 Acceleration</h4>
+                        <div class="placeholder">TeleSchool: 6M children weekly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-transition">↓ Explore Fintech Era (2021-2025) ↓</div>
+
+        <!-- Fintech Era Section -->
+        <div class="section section-fintech">
+            <div class="section-header">
+                <div class="section-number" style="background: #e74c3c;">3</div>
+                <div class="section-title">Fintech Era</div>
+                <div class="section-subtitle">Digital Payments & 5G Future (2021-2025)</div>
+            </div>
+
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="content-block">
+                        <h3>💳 RAAST Revolution <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">1.5 billion transactions processed</div>
+                        <div class="placeholder">Rs34+ trillion value</div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h3>📱 Mobile Banking Dominance <span class="json-badge">JSON</span></h3>
+                        <div class="placeholder">EasyPaisa: 50M users</div>
+                        <div class="placeholder">JazzCash: 80,000+ agents</div>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="stats-card">
+                        <h4>🚀 5G Future <span class="json-badge">JSON</span></h4>
+                        <div class="placeholder">Commercial launch timeline</div>
+                        <div class="placeholder">Speed test results: 1.5 Gbps</div>
+                    </div>
+                    
+                    <div class="timeline-mini">
+                        <h4>💰 Investment Boom</h4>
+                        <div class="placeholder">$300M+ fintech funding</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE SINGLE PAGE SCROLLER -->
+    <div class="device-label">MOBILE - Single Page Scroller Experience</div>
+    
+    <div class="mobile-container">
+        <div class="mobile-frame">
+            <div class="mobile-screen">
+                <!-- Sticky Mobile Header with Progress -->
+                <div class="mobile-header">
+                    <div>📱 Digital Pakistan</div>
+                    <div style="font-size: 14px;">Foundation Era</div>
+                    <div>⋮</div>
+                    <div class="mobile-progress-bar">
+                        <div class="mobile-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Scrollable Content -->
+                <div class="mobile-content">
+                    <!-- Hero Section -->
+                    <div class="mobile-section" style="background: linear-gradient(135deg, #f4ecf7 0%, #fff 100%);">
+                        <div class="mobile-section-header">
+                            <div class="mobile-section-number" style="background: #9b59b6;">🏠</div>
+                            <div class="mobile-section-title">Digital Journey</div>
+                            <div style="color: #7f8c8d; font-size: 14px;">2006-2025 Timeline</div>
+                        </div>
+                        
+                        <div class="placeholder" style="height: 200px; margin-bottom: 25px;">
+                            🎬 Hero Video<br/>
+                            Auto-playing preview
+                        </div>
+                        
+                        <div class="mobile-stats-grid">
+                            <div class="mobile-stat-card">
+                                <div style="font-size: 24px; color: #3498db;">135.5M</div>
+                                <div style="font-size: 12px;">Users</div>
+                            </div>
+                            <div class="mobile-stat-card">
+                                <div style="font-size: 24px; color: #27ae60;">53.57%</div>
+                                <div style="font-size: 12px;">Penetration</div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 25px;">
+                            <button style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 12px 25px; border-radius: 20px; font-weight: bold;">
+                                Start Journey ↓
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Foundation Era -->
+                    <div class="mobile-section" style="background: linear-gradient(135deg, #e8f8f5 0%, #fff 100%);">
+                        <div class="mobile-section-header">
+                            <div class="mobile-section-number" style="background: #27ae60;">1</div>
+                            <div class="mobile-section-title">Foundation Era</div>
+                            <div style="color: #7f8c8d; font-size: 14px;">2006-2014</div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>🏢 PTCL Privatization <span class="json-badge">JSON</span></h4>
+                            <div class="placeholder">$2.6B Investment Story</div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>☕ Internet Cafe Culture</h4>
+                            <div class="placeholder">Image Gallery (Swipeable)</div>
+                            <div style="margin-top: 10px; color: #7f8c8d; font-size: 14px;">
+                                79.3% accessed internet via cafes
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>📊 Growth Stats <span class="json-badge">JSON</span></h4>
+                            <div class="placeholder">Interactive Chart</div>
+                            <div style="display: flex; justify-content: space-between; margin-top: 15px; font-size: 14px;">
+                                <div>2006: 10.17M</div>
+                                <div>2014: 30M+</div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(39, 174, 96, 0.1); border-radius: 10px;">
+                            <div style="color: #27ae60; font-weight: bold; margin-bottom: 5px;">Keep Scrolling</div>
+                            <div style="font-size: 14px; color: #7f8c8d;">↓ Mobile Revolution Era ↓</div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Revolution Era -->
+                    <div class="mobile-section" style="background: linear-gradient(135deg, #fef5e7 0%, #fff 100%);">
+                        <div class="mobile-section-header">
+                            <div class="mobile-section-number" style="background: #f39c12;">2</div>
+                            <div class="mobile-section-title">Mobile Revolution</div>
+                            <div style="color: #7f8c8d; font-size: 14px;">2014-2021</div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>📱 3G/4G Launch <span class="json-badge">JSON</span></h4>
+                            <div class="placeholder">Network Coverage Map</div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>📺 Social Media Boom</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                                <div style="text-align: center; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                                    <div style="font-weight: bold;">Facebook</div>
+                                    <div style="color: #3498db;">57.6M</div>
+                                </div>
+                                <div style="text-align: center; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                                    <div style="font-weight: bold;">YouTube</div>
+                                    <div style="color: #e74c3c;">71.7M</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(243, 156, 18, 0.1); border-radius: 10px;">
+                            <div style="color: #f39c12; font-weight: bold; margin-bottom: 5px;">Continue Reading</div>
+                            <div style="font-size: 14px; color: #7f8c8d;">↓ Fintech Era Next ↓</div>
+                        </div>
+                    </div>
+
+                    <!-- Fintech Era -->
+                    <div class="mobile-section" style="background: linear-gradient(135deg, #fadbd8 0%, #fff 100%);">
+                        <div class="mobile-section-header">
+                            <div class="mobile-section-number" style="background: #e74c3c;">3</div>
+                            <div class="mobile-section-title">Fintech Era</div>
+                            <div style="color: #7f8c8d; font-size: 14px;">2021-2025</div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>💳 RAAST Success <span class="json-badge">JSON</span></h4>
+                            <div class="placeholder">1.5B Transactions</div>
+                            <div class="placeholder">Rs34+ Trillion Value</div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>🚀 5G Future</h4>
+                            <div class="placeholder">Commercial Launch 2025</div>
+                            <div style="margin-top: 10px; color: #e74c3c; font-weight: bold;">
+                                1.5 Gbps Speed Tested
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-card">
+                            <h4>💰 Investment Boom <span class="json-badge">JSON</span></h4>
+                            <div class="placeholder">$300M+ Fintech Funding</div>
+                            <div class="placeholder">Major Startup Success Stories</div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 30px; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                            <div style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 15px;">
+                                Journey Complete! 🎉
+                            </div>
+                            <div style="color: #7f8c8d; font-size: 14px; margin-bottom: 20px;">
+                                You've explored 19 years of Pakistan's digital transformation
+                            </div>
+                            <button style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 12px 25px; border-radius: 20px; font-weight: bold; margin: 5px;">
+                                View Full Statistics
+                            </button>
+                            <button style="background: transparent; border: 2px solid #e74c3c; color: #e74c3c; padding: 12px 25px; border-radius: 20px; font-weight: bold; margin: 5px;">
+                                Share Timeline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Hint -->
+    <div class="scroll-hint">
+        💡 Single continuous scroll - no page breaks!
+    </div>
+</body>
+</html>
